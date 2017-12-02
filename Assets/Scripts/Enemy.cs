@@ -5,8 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
 	public Player player;
-	public int MoveSpeed = 4;
-	public int AttackMoveSpeed = 6;
+	public float MoveSpeed = 4;
+	public float AttackMoveSpeed = 6;
 	public float DistToDie = 25;
 	public float MinDist = 1;
 	public float DistToAttack = 20;
@@ -16,6 +16,9 @@ public class Enemy : MonoBehaviour {
 
 	public int MaxRandomMovingFrames = 100;
 	public int MinRandomMovingFrames = 20;
+
+	public SpriteRenderer sprite;
+	public int PlayerOrderInLayer = 10;
 
 	// Use this for initialization
 	void Start () {
@@ -39,6 +42,9 @@ public class Enemy : MonoBehaviour {
 			}
 			rndMovesCount -= 1;
 			transform.position += rndDirection * MoveSpeed * Time.deltaTime;
+
+			if (rndDirection.x != 0)
+				sprite.flipX = (rndDirection.x > 0);
 		}
 		else if (Vector3.Distance(player.transform.position, transform.position) > MinDist)
 		{
@@ -46,8 +52,17 @@ public class Enemy : MonoBehaviour {
 			dir.Normalize();
 			transform.position += dir * AttackMoveSpeed * Time.deltaTime;
 
+			if (dir.x != 0)
+				sprite.flipX = (dir.x > 0);
+
 			rndDirection = dir;
 			rndMovesCount = 30;
+		}
+
+		if (player.transform.position.y < transform.position.y) {
+			sprite.sortingOrder = PlayerOrderInLayer - 1;
+		} else {
+			sprite.sortingOrder = PlayerOrderInLayer + 1;
 		}
 	}
 
