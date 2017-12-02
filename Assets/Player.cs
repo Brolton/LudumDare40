@@ -14,17 +14,9 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        var h = Input.GetAxis("Horizontal");
-        var v = Input.GetAxis("Vertical");
+        var h = Input.GetAxisRaw("Horizontal");
+        var v = Input.GetAxisRaw("Vertical");
 
         rb2D.velocity = new Vector2(h, v) * speed;
-        /*if (h != 0 || v != 0)
-        {
-            rb2D.MovePosition((new Vector2(h, v) * speed * Time.fixedDeltaTime) + (Vector2)transform.position);
-        }
-        else
-        {
-            rb2D.velocity = Vector2.zero;
-        }*/
     }
 }
