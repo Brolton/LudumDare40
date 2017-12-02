@@ -551,7 +551,7 @@ Prefab:
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
       propertyPath: flashLightOffset.Array.data[1].y
-      value: 52
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
@@ -566,12 +566,12 @@ Prefab:
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
       propertyPath: flashLightSkew.Array.data[1].x
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
       propertyPath: flashLightSkew.Array.data[0].y
-      value: 2.2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
@@ -591,17 +591,17 @@ Prefab:
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
       propertyPath: flashLightStrength.Array.data[0]
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
       propertyPath: flashLightSkew.Array.data[1].y
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}
       propertyPath: radius
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114395875546596012, guid: 1393f134721713343a75a24b345fa7f8,
         type: 2}

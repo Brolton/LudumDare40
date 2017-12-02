@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61224851100592090}
   - component: {fileID: 114966759222567132}
   m_Layer: 0
-  m_Name: Child
+  m_Name: Firefly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
