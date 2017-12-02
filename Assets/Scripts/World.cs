@@ -5,7 +5,9 @@ using UnityEngine;
 public class World : MonoBehaviour
 {
 	public float groundMinY = 0;
-	public float groundMaxY = 100;
+	public float groundMaxY = 10;
+
+	public Player player;
 
 	// Use this for initialization
 	void Start () {
