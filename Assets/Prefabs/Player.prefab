@@ -175,6 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rb2D: {fileID: 50110994536289608}
+  heartbeat: 0
 --- !u!124 &124720543700735548
 Behaviour:
   m_ObjectHideFlags: 1
