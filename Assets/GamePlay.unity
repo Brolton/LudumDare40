@@ -241,60 +241,6 @@ Transform:
   m_Father: {fileID: 1750607982}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &248587754
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 248587755}
-  - component: {fileID: 248587756}
-  m_Layer: 0
-  m_Name: background_trigger_l
-  m_TagString: background_trigger_l
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &248587755
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 248587754}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000014156102, w: 1}
-  m_LocalPosition: {x: -14.323436, y: 2.2804432, z: -4.963043}
-  m_LocalScale: {x: 1, y: 17.56, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1201171276}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &248587756
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 248587754}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &440766106
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,12 +559,22 @@ Prefab:
       propertyPath: flashLightRadius.Array.data[1]
       value: 110
       objectReference: {fileID: 0}
+    - target: {fileID: 114055079320905056, guid: 1393f134721713343a75a24b345fa7f8,
+        type: 2}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 1327158596}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1393f134721713343a75a24b345fa7f8, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1201171276 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4653205348413492, guid: 1393f134721713343a75a24b345fa7f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1201171275}
+--- !u!212 &1327158596 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212134909261398700, guid: 1393f134721713343a75a24b345fa7f8,
     type: 2}
   m_PrefabInternal: {fileID: 1201171275}
 --- !u!1 &1572581961 stripped
@@ -682,60 +638,6 @@ MonoBehaviour:
   rightTrigger: {fileID: 440766106}
   player: {fileID: 1572581961}
   background_width: 50
---- !u!1 &2041898772
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2041898773}
-  - component: {fileID: 2041898775}
-  m_Layer: 0
-  m_Name: background_trigger_r
-  m_TagString: background_trigger_r
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2041898773
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2041898772}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000014156102, w: 1}
-  m_LocalPosition: {x: 25.676563, y: 2.2804434, z: -4.963043}
-  m_LocalScale: {x: 1, y: 17.56, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1201171276}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2041898775
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2041898772}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &2094259538
 GameObject:
   m_ObjectHideFlags: 0
