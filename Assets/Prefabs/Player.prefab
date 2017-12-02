@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 20332510788194794}
   - component: {fileID: 124720543700735548}
   - component: {fileID: 81629546401409020}
+  - component: {fileID: 114395875546596012}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -67,7 +68,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1212646636446900}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0000014156102, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0000014156102, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -175,7 +176,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rb2D: {fileID: 50110994536289608}
-  heartbeat: 0
+--- !u!114 &114395875546596012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517072072528436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0474d567162cd48b4f65f290ee9ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 2100000, guid: d95c750032aa7674eae800e426f3c9bc, type: 2}
+  cam: {fileID: 20332510788194794}
+  playerTransform: {fileID: 4653205348413492}
+  flashLightRadius:
+  - 100
+  - 100
+  flashLightBorder:
+  - 10
+  - 10
+  flashLightSkew:
+  - {x: 1, y: 0.5}
+  - {x: 0.5, y: 1}
+  flashLightOffset:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  flashLightStrength:
+  - 1
+  - 1
+  setableRadius: 2
 --- !u!124 &124720543700735548
 Behaviour:
   m_ObjectHideFlags: 1
