@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     public const float maxHeartbeatForRunning = 80f;
     public const float normalSpeed = 1f;
     public const float runningSpeed = 2f;
+    public const float normalHeartbeatIncrease = 1f;
+    public const float runningHeartbeatIncrease = 4f;
     public const string enemyTag = "enemy";
 
     private float continuoslyDecreaseHeartbeat;
@@ -33,7 +35,7 @@ public class Player : MonoBehaviour
         var h = Input.GetAxisRaw("Horizontal");
         var v = Input.GetAxisRaw("Vertical");
 
-        if (isRunning() && heartbeat < maxHeartbeatForRunning)
+        if (Input.GetKey(KeyCode.LeftShift) && heartbeat < maxHeartbeatForRunning)
         {
             continuoslyDecreaseHeartbeat = 0f;   // heartbeat decrease reseted after start of running
             speed = 2f;
@@ -65,22 +67,15 @@ public class Player : MonoBehaviour
         }
         else
         {
-            heartbeat += 1f * Time.deltaTime;     // heartbeat always going up ?
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                heartbeat += runningHeartbeatIncrease * Time.deltaTime;
+            }
+            else
+            {
+                heartbeat += normalHeartbeatIncrease * Time.deltaTime;  // Needed ?
+            }           
         }
-    }
-
-    bool isRunning()
-    {
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            return true;
-        }
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            return false;
-        }
-
-        return true;
     }
 
     public void FireflyPickedUp()
