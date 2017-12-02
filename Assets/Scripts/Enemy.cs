@@ -59,10 +59,10 @@ public class Enemy : MonoBehaviour {
 			rndMovesCount = 30;
 		}
 
-		if (player.transform.position.y < transform.position.y) {
-			sprite.sortingOrder = PlayerOrderInLayer - 1;
+		if (transform.position.y > player.transform.position.y) {
+			sprite.sortingOrder = PlayerOrderInLayer - (int)(Mathf.Abs(player.transform.position.y - transform.position.y) / 0.1f);
 		} else {
-			sprite.sortingOrder = PlayerOrderInLayer + 1;
+			sprite.sortingOrder = PlayerOrderInLayer + (int)((player.transform.position.y - transform.position.y) / 0.1f);
 		}
 	}
 
