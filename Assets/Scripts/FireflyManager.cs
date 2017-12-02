@@ -7,8 +7,8 @@ public class FirelfyManager : MonoBehaviour
     public Firefly firefly;
     public Player player;
     public const float spawnTime = 7f;    // Spawn time in seconds - NEEDS TO BE ADJUSTED
-    public const float timeOfFirstSpawn = 0;
-    public const float offsetFromBorders = 5;
+    public const float timeOfFirstSpawn = 0f;
+    public const float offsetFromBorders = 5f;
 
     public float XSizeOfPlayArea;
     public float ZSizeOfPlayArea;
