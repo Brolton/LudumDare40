@@ -68,11 +68,11 @@ public class Player : MonoBehaviour
 
     bool isRunning()
     {
-        if (Input.GetButtonDown("Shift"))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             return true;
         }
-        else if (Input.GetButtonUp("Shift"))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             return false;
         }

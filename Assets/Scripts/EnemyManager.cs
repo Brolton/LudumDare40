@@ -52,7 +52,6 @@ public class EnemyManager : MonoBehaviour
         Enemy newEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity).GetComponent<Enemy>();
         newEnemy.SetTarget(world.player);
         newEnemy.gameObject.name = "Enemy" + enemyNo.ToString();
-        newEnemy.gameObject.tag = "enemy";
         newEnemy.transform.parent = world.transform;
 
         enemies.Add(newEnemy);
