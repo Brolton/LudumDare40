@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212931269362977228}
   - component: {fileID: 61224851100592090}
   - component: {fileID: 114966759222567132}
+  - component: {fileID: 114669102411128988}
   m_Layer: 0
   m_Name: Firefly
   m_TagString: Untagged
@@ -67,6 +68,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114669102411128988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1527169363973906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce47203acdd920a458871bcd9bf4f840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  rb2D: {fileID: 0}
+  heartbeat: 0
+  lightVicinity: 0
+  sprite: {fileID: 0}
 --- !u!114 &114966759222567132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78,7 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7c1550d48366449eb4ec106e5a446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 114055079320905056, guid: 1393f134721713343a75a24b345fa7f8, type: 2}
+  fireflyManager: {fileID: 0}
 --- !u!212 &212931269362977228
 SpriteRenderer:
   m_ObjectHideFlags: 1

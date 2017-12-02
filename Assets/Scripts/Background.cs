@@ -14,13 +14,13 @@ public class Background : MonoBehaviour {
 
 	public int background_width;
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		if (Mathf.Abs (leftTrigger.transform.position.x - player.transform.position.x) > background_width/2) {
 			SetTriggerEnable (TriggerType.LEFT, true);
 		}

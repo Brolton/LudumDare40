@@ -33,8 +33,11 @@ public class EnemyManager : MonoBehaviour
 
     void Spawn()
     {
+        Debug.Log(enemies.Count);
+
         if (enemies.Count >= MaxEnemiesCount)
             return;
+        
 
         enemyNo++;
 
@@ -60,6 +63,7 @@ public class EnemyManager : MonoBehaviour
     public void OnEnemyDestroyed(Enemy enemy)
     {
         enemies.Remove(enemy);
+        Destroy(enemy);
         Spawn();
     }
 }

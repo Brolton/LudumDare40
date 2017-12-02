@@ -46,8 +46,7 @@ public class Player : MonoBehaviour
         rb2D.velocity = new Vector2(h, v) * speed;
 		if (h != 0)
 			sprite.flipX = (h < 0);
-
-        heartbeat += 0.1f * Time.deltaTime;     // heartbeat always going up ?
+        
 
         if (heartbeat < 0f)
         {
@@ -64,6 +63,10 @@ public class Player : MonoBehaviour
             heartbeat -= decreaseOfHeartbeatInOneSecond * Time.deltaTime;
             continuoslyDecreaseHeartbeat -= decreaseOfHeartbeatInOneSecond;
         }
+        else
+        {
+            heartbeat += 1f * Time.deltaTime;     // heartbeat always going up ?
+        }
     }
 
     bool isRunning()
@@ -77,7 +80,7 @@ public class Player : MonoBehaviour
             return false;
         }
 
-        return false;
+        return true;
     }
 
     public void FireflyPickedUp()

@@ -33,8 +33,7 @@ public class Enemy : MonoBehaviour
 
         if (Vector3.Distance(player.transform.position, transform.position) > DistToDie)
         {
-            Destroy(this.gameObject);
-            EnemyManager.Instance.OnEnemyDestroyed(this);
+            EnemyManager.Instance.OnEnemyDestroyed(this);                    
         }
         else if (Vector3.Distance(player.transform.position, transform.position) > DistToAttack)
         {
