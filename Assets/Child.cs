@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class Child : MonoBehaviour
 {
+    public Player player;
 
-    // Use this for initialization
+
     void Start()
     {
-
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
 
     }
 
-    void OnCollisionEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        Destroy(other);
+        if (col.gameObject == player)
+        {
+            player.ChildPickedUp();
+            Destroy(this);
+        }
     }
 }
