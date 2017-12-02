@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Child : MonoBehaviour
+public class Firefly : MonoBehaviour
 {
     public Player player;
 
@@ -21,7 +21,8 @@ public class Child : MonoBehaviour
     {
         if (col.gameObject == player)
         {
-            player.ChildPickedUp();
+            player.FireflyPickedUp();
+            // Effect ?
             Destroy(this);
         }
     }
