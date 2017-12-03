@@ -298,6 +298,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95878123260177248, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ff3c615aa6b498340a854fa298244036, type: 2}
+    - target: {fileID: 114899075523671750, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: glowAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: ff3c615aa6b498340a854fa298244036, type: 2}
+    - target: {fileID: 114899075523671750, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: idleAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: 9159084d88fe93740adbdcf8cd499697, type: 2}
+    - target: {fileID: 114899075523671750, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: walkAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: 79650c4bfa30938468aa5163db4bbeb2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   m_IsPrefabParent: 0

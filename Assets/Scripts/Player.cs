@@ -33,10 +33,17 @@ public class Player : MonoBehaviour
     public Sprite idle;
     public Sprite walk;
 
+    public RuntimeAnimatorController runAnim;
+    public RuntimeAnimatorController idleAnim;
+    public RuntimeAnimatorController walkAnim;
+    public RuntimeAnimatorController glowAnim;
+
+    Animator animator;
 
     void Start()
     {
         instance = this;
+        animator = this.gameObject.GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
@@ -62,17 +69,17 @@ public class Player : MonoBehaviour
 
         if (horizontalMovementRaw == 0 && vericalMovementRaw == 0)
         {
-            instance.sprite.sprite = idle;
+            animator.runtimeAnimatorController = idleAnim;
         }
         else
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                instance.sprite.sprite = run;
+                //animator.runtimeAnimatorController = runAnim;
             }
             else
             {
-                instance.sprite.sprite = walk;
+                animator.runtimeAnimatorController = walkAnim;
             }           
         }
 
