@@ -334,6 +334,11 @@ Prefab:
       propertyPath: lightVicinity
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114899075523671750, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: runAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: bed4a73de4eb2624b8be2d7b298d37d1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   m_IsPrefabParent: 0

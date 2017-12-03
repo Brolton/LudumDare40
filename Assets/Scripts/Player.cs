@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     public const float decreaseOfHeartbeatInOneSecond = heartbeatDecreasePerPickedUpFirefly / lengthOfDecreasingHeartbeatAfterPickedUpFirefly;
     public const float maxHeartbeatForRunning = 80f;
     public const float normalSpeed = 1f;
-    public const float runningSpeed = 2f;
+    public const float runningSpeed = 3f;
     public const float normalHeartbeatIncrease = 1f;
     public const float runningHeartbeatIncrease = 4f;
     public const float pickedUpFireflyCountdownSet = 1.5f;
@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                //animator.runtimeAnimatorController = runAnim;
+                animator.runtimeAnimatorController = runAnim;
             }
             else
             {
