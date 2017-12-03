@@ -777,6 +777,8 @@ MonoBehaviour:
   groundMinY: -5
   groundMaxY: 1
   player: {fileID: 114899075523671750}
+  obstaclePrefab: {fileID: 1931692886568434, guid: 1c11abcdfe0cfd34db4056cffddbbf62,
+    type: 2}
 --- !u!114 &114899075523671750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -792,14 +794,14 @@ MonoBehaviour:
   rb2D: {fileID: 50655315623248058}
   heartbeat: 0
   lightVicinity: 0
+  scrollSensitivity: 1.3
+  lanternDtSizeSensitivity: 2
   gameManager: {fileID: 114403960022997446, guid: d356bb4c0a59f6f42975024a6e0e6564,
     type: 2}
   fireflyManager: {fileID: 0}
+  torchLightEffect: {fileID: 0}
   sprite: {fileID: 212041171682663178}
   instance: {fileID: 114899075523671750}
-  run: {fileID: 21300000, guid: 6cc4618026c000545aa196d37eefc5e0, type: 3}
-  idle: {fileID: 21300000, guid: 995bdb8b9774c3e40b0b1575579475ee, type: 3}
-  walk: {fileID: 21300000, guid: 4c0ebf0980f301145926e5f8fe23f740, type: 3}
   runAnim: {fileID: 0}
   idleAnim: {fileID: 9100000, guid: 9159084d88fe93740adbdcf8cd499697, type: 2}
   walkAnim: {fileID: 9100000, guid: 79650c4bfa30938468aa5163db4bbeb2, type: 2}
