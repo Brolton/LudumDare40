@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
 
     Animator animator;
 
+	public HeartPanel Heart;
+
     void Start()
     {
         //lightVicinity = 15f;
@@ -140,6 +142,8 @@ public class Player : MonoBehaviour
                 heartbeat += normalHeartbeatIncrease * Time.deltaTime * NumberOfEnemiesNearby();  // Needed ?
             }           
         }
+
+		Heart.SetHeartbeat (heartbeat);
     }
 
     public int NumberOfEnemiesNearby()

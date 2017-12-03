@@ -420,7 +420,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -618,7 +618,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5, y: -0.3}
+  m_Offset: {x: 0.3, y: 0.9}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -629,7 +629,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1}
+  m_Size: {x: 1.5, y: 3}
   m_EdgeRadius: 0
 --- !u!61 &61935187301213206
 BoxCollider2D:
@@ -791,19 +791,20 @@ MonoBehaviour:
   speed: 1
   rb2D: {fileID: 50655315623248058}
   heartbeat: 0
-  lightVicinity: 0
+  lightVicinity: 3
+  scrollSensitivity: 1.3
+  lanternDtSizeSensitivity: 2
   gameManager: {fileID: 114403960022997446, guid: d356bb4c0a59f6f42975024a6e0e6564,
     type: 2}
   fireflyManager: {fileID: 0}
+  torchLightEffect: {fileID: 114498237569431912}
   sprite: {fileID: 212041171682663178}
   instance: {fileID: 114899075523671750}
-  run: {fileID: 21300000, guid: 6cc4618026c000545aa196d37eefc5e0, type: 3}
-  idle: {fileID: 21300000, guid: 995bdb8b9774c3e40b0b1575579475ee, type: 3}
-  walk: {fileID: 21300000, guid: 4c0ebf0980f301145926e5f8fe23f740, type: 3}
-  runAnim: {fileID: 0}
+  runAnim: {fileID: 9100000, guid: bed4a73de4eb2624b8be2d7b298d37d1, type: 2}
   idleAnim: {fileID: 9100000, guid: 9159084d88fe93740adbdcf8cd499697, type: 2}
   walkAnim: {fileID: 9100000, guid: 79650c4bfa30938468aa5163db4bbeb2, type: 2}
   glowAnim: {fileID: 9100000, guid: ff3c615aa6b498340a854fa298244036, type: 2}
+  Heart: {fileID: 0}
 --- !u!114 &114923550279128064
 MonoBehaviour:
   m_ObjectHideFlags: 1
