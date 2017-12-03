@@ -29,7 +29,7 @@ public class FireflyManager : MonoBehaviour
             return;
         }
 
-        float randomXOffset = Random.Range(player.lightVicinity, 10);
+        float randomXOffset = Random.Range(player.lightVicinity + 5, 40);
         bool randomBool = (Random.value < 0.5);
         if (randomBool)
             randomXOffset *= -1;

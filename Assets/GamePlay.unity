@@ -222,25 +222,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 376110270}
---- !u!1 &518516802 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1553610877632928, guid: c45c8ac866f646440be905cd588b411c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1710766776}
---- !u!114 &518516803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 518516802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e7c1550d48366449eb4ec106e5a446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  fireflyManager: {fileID: 0}
-  sprite: {fileID: 0}
 --- !u!1001 &651846067
 Prefab:
   m_ObjectHideFlags: 0
@@ -949,6 +930,16 @@ Prefab:
       propertyPath: Heart
       value: 
       objectReference: {fileID: 886145200}
+    - target: {fileID: 114923550279128064, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: world
+      value: 
+      objectReference: {fileID: 2094259540}
+    - target: {fileID: 114451275540204904, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: world
+      value: 
+      objectReference: {fileID: 2094259540}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   m_IsPrefabParent: 0
