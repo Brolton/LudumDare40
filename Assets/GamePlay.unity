@@ -339,6 +339,21 @@ Prefab:
       propertyPath: runAnim
       value: 
       objectReference: {fileID: 9100000, guid: bed4a73de4eb2624b8be2d7b298d37d1, type: 2}
+    - target: {fileID: 20929583224096348, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20929583224096348, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20929583224096348, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   m_IsPrefabParent: 0
