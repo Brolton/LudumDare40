@@ -172,7 +172,7 @@ public class Player : MonoBehaviour
             if (Vector2.Distance(instance.transform.localPosition, enemy.transform.localPosition) < lightVicinity)
             {
                 // Effect ?
-                Destroy(enemy);
+				enemy.GetComponent<Enemy>().Kill();
             }
         }
     }
@@ -182,8 +182,7 @@ public class Player : MonoBehaviour
         if (col.gameObject.tag == "firefly")
         {
             FireflyPickedUp();
-			fireflyManager.OnFireflyDestroyed (col.gameObject.GetComponent<Firefly>());
-            Destroy(col.gameObject);
+			col.gameObject.GetComponent<Firefly>().Kill();
         }
     }
 }

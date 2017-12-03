@@ -59,6 +59,6 @@ public class FireflyManager : MonoBehaviour
 	{
 		world.RemoveObject(firefly.gameObject);
         fireflyExists = false;
-        //Spawn();
+        Spawn();
 	}
 }

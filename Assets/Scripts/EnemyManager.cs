@@ -30,6 +30,7 @@ public class EnemyManager : MonoBehaviour
 
     }
 
+
     void Spawn()
     {
         //Debug.Log(enemies.Count);
@@ -62,7 +63,7 @@ public class EnemyManager : MonoBehaviour
     public void OnEnemyDestroyed(Enemy enemy)
     {
         enemies.Remove(enemy);
-		//world.RemoveObject(enemy.gameObject);
-        //Spawn();
+		world.RemoveObject(enemy.gameObject);
+        Spawn();
     }
 }

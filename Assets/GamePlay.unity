@@ -308,8 +308,7 @@ Prefab:
         type: 2}
       propertyPath: fireflyManager
       value: 
-      objectReference: {fileID: 114162074222877076, guid: ce0c5dae523da6948bb30abf4c68a74e,
-        type: 2}
+      objectReference: {fileID: 1884759995}
     - target: {fileID: 61622013688766590, guid: c45c8ac866f646440be905cd588b411c,
         type: 2}
       propertyPath: m_Offset.x
@@ -338,6 +337,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1884759995 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114162074222877076, guid: ce0c5dae523da6948bb30abf4c68a74e,
+    type: 2}
+  m_PrefabInternal: {fileID: 651846067}
+  m_Script: {fileID: 11500000, guid: 9863eeb68eb3ce24c88902bcf8d13b50, type: 3}
 --- !u!114 &2094259540 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114892324765603960, guid: c45c8ac866f646440be905cd588b411c,

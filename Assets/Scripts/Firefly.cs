@@ -22,5 +22,11 @@ public class Firefly : MonoBehaviour
     void OnDestroy()
     {
         // Effect ?
-    }   
+    }
+
+	public void Kill()
+	{
+		fireflyManager.OnFireflyDestroyed(this);
+		Destroy(this.gameObject);
+	}
 }
