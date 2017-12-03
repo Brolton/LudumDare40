@@ -7,11 +7,17 @@ public class Player : MonoBehaviour
     public float speed = normalSpeed;
     public Rigidbody2D rb2D;
     public float heartbeat = 0f;     // value between 0 and 100
-    public float lightVicinity = 15f;     // TO BE CHANGED
+    public float lightVicinity = 3f;     // TO BE CHANGED
+
+    public float scrollSensitivity = 1.3f;
+
+    public float lanternDtSizeSensitivity = 2f;
 
     public GameManager gameManager;
 
     public FireflyManager fireflyManager;
+
+    public ApplyTorchEffect torchLightEffect;
 
     public const float heartbeatDecreasePerPickedUpFirefly = 25f;
     public const float lengthOfDecreasingHeartbeatAfterPickedUpFirefly = 5f;
@@ -40,7 +46,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        lightVicinity = 15f;
+        //lightVicinity = 15f;
         instance = this;
         animator = this.gameObject.GetComponentInChildren<Animator>();
     }
@@ -93,6 +99,20 @@ public class Player : MonoBehaviour
         }
 
         
+        var mouseWheel = Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
+        var laternDtSize = Input.GetAxisRaw("Lantern Size") * lanternDtSizeSensitivity * Time.fixedDeltaTime;
+        // prevent from pressing both the mouseWheel and U/I to double the speed
+        lightVicinity += Mathf.Clamp(mouseWheel + laternDtSize, Mathf.Min(mouseWheel, laternDtSize), Mathf.Max(mouseWheel, laternDtSize));
+        lightVicinity = Mathf.Clamp(lightVicinity, 1f, 5f);
+
+        // calculates how many screen pixels one unit is wide
+        var screenPixelsPerUnit = (torchLightEffect.cam.WorldToScreenPoint(Vector3.one) - 
+            torchLightEffect.cam.WorldToScreenPoint(Vector3.zero)).magnitude;
+        // make the light actual radius match lightVicinity(which is in units)
+        torchLightEffect.radius = (screenPixelsPerUnit * lightVicinity) / // divides through the rough width of the light
+            (torchLightEffect.flashLightRadius[0] * torchLightEffect.flashLightSkew[0].x);
+        
+
         // Clipping of heartbeat value
         if (heartbeat < 0f)
         {

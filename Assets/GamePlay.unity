@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &105460145 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114498237569431912, guid: c45c8ac866f646440be905cd588b411c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1710766776}
+  m_Script: {fileID: 11500000, guid: 0f0474d567162cd48b4f65f290ee9ae0, type: 3}
 --- !u!1001 &284817260
 Prefab:
   m_ObjectHideFlags: 0
@@ -317,6 +323,16 @@ Prefab:
     - target: {fileID: 61622013688766590, guid: c45c8ac866f646440be905cd588b411c,
         type: 2}
       propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114899075523671750, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: torchLightEffect
+      value: 
+      objectReference: {fileID: 105460145}
+    - target: {fileID: 114899075523671750, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: lightVicinity
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
