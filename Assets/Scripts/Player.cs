@@ -133,13 +133,28 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                heartbeat += runningHeartbeatIncrease * Time.deltaTime;
+                heartbeat += runningHeartbeatIncrease * Time.deltaTime * NumberOfEnemiesNearby();
             }
             else
             {
-                heartbeat += normalHeartbeatIncrease * Time.deltaTime;  // Needed ?
+                heartbeat += normalHeartbeatIncrease * Time.deltaTime * NumberOfEnemiesNearby();  // Needed ?
             }           
         }
+    }
+
+    public int NumberOfEnemiesNearby()
+    {
+        int returnValue = 0;
+
+        foreach (GameObject enemy in GameObject.FindGameObjectsWithTag(enemyTag))
+        {
+            if (Vector2.Distance(instance.transform.localPosition, enemy.transform.localPosition) < lightVicinity)
+            {
+                returnValue++;
+            }
+        }
+
+        return returnValue;
     }
 
     public void FireflyPickedUp()
