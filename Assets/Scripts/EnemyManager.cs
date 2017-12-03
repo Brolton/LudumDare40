@@ -18,12 +18,12 @@ public class EnemyManager : MonoBehaviour
     List<Enemy> enemies = new List<Enemy>();
     int enemyNo = 0;
 
-    static public EnemyManager Instance;
+    static public EnemyManager instance;
 
     void Start()
     {
         InvokeRepeating("Spawn", timeOfFirstSpawn, spawnTime);
-        Instance = this;
+        instance = this;
     }
 
     void Update()
@@ -62,7 +62,7 @@ public class EnemyManager : MonoBehaviour
     public void OnEnemyDestroyed(Enemy enemy)
     {
         enemies.Remove(enemy);
-        Destroy(enemy);
+        Destroy(enemy.gameObject);
         Spawn();
     }
 }

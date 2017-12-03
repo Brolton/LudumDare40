@@ -774,8 +774,15 @@ MonoBehaviour:
   rb2D: {fileID: 50655315623248058}
   heartbeat: 0
   lightVicinity: 0
+  gameManager: {fileID: 114403960022997446, guid: d356bb4c0a59f6f42975024a6e0e6564,
+    type: 2}
+  fireflyManager: {fileID: 114162074222877076, guid: ce0c5dae523da6948bb30abf4c68a74e,
+    type: 2}
   sprite: {fileID: 212041171682663178}
   instance: {fileID: 114899075523671750}
+  run: {fileID: 21300000, guid: 6cc4618026c000545aa196d37eefc5e0, type: 3}
+  idle: {fileID: 21300000, guid: 995bdb8b9774c3e40b0b1575579475ee, type: 3}
+  walk: {fileID: 21300000, guid: 4c0ebf0980f301145926e5f8fe23f740, type: 3}
 --- !u!114 &114923550279128064
 MonoBehaviour:
   m_ObjectHideFlags: 1

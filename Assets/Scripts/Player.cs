@@ -29,6 +29,11 @@ public class Player : MonoBehaviour
 
     public Player instance;
 
+    public Sprite run;
+    public Sprite idle;
+    public Sprite walk;
+
+
     void Start()
     {
         instance = this;
@@ -36,37 +41,53 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(continuoslyDecreaseHeartbeat);
+        var horizontalMovementRaw = Input.GetAxisRaw("Horizontal");
+        var vericalMovementRaw = Input.GetAxisRaw("Vertical");
 
-        var h = Input.GetAxisRaw("Horizontal");
-        var v = Input.GetAxisRaw("Vertical");
-
+        // Is running
         if (Input.GetKey(KeyCode.LeftShift) && heartbeat < maxHeartbeatForRunning)
         {
             continuoslyDecreaseHeartbeat = 0f;   // heartbeat decrease reseted after start of running
-            speed = 2f;
+            speed = 2f;           
         }
         else
         {
             speed = 1f;
         }
 
-        rb2D.velocity = new Vector2(h, v) * speed;
-		if (h != 0)
-			sprite.flipX = (h < 0);
-        
+        // Movement
+        rb2D.velocity = new Vector2(horizontalMovementRaw, vericalMovementRaw) * speed;
+		if (horizontalMovementRaw != 0)
+			sprite.flipX = (horizontalMovementRaw < 0);     // rotation to direction of movement
 
+        if (horizontalMovementRaw == 0 && vericalMovementRaw == 0)
+        {
+            instance.sprite.sprite = idle;
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                instance.sprite.sprite = run;
+            }
+            else
+            {
+                instance.sprite.sprite = walk;
+            }           
+        }
+
+        
+        // Clipping
         if (heartbeat < 0f)
         {
             heartbeat = 0f;
         }
-
         if (heartbeat > 100f)
         {
             gameManager.GameOver();
         }
        
-
+        // Decrease of heartbeat after picking up firefly
         if (continuoslyDecreaseHeartbeat > 0f)
         {
             heartbeat -= decreaseOfHeartbeatInOneSecond * Time.deltaTime;
