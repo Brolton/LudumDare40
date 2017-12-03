@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
         }
 
         
-        var mouseWheel = Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
+        var mouseWheel = -Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
         var laternDtSize = Input.GetAxisRaw("Lantern Size") * lanternDtSizeSensitivity * Time.fixedDeltaTime;
         // prevent from pressing both the mouseWheel and U/I to double the speed
         lightVicinity += Mathf.Clamp(mouseWheel + laternDtSize, Mathf.Min(mouseWheel, laternDtSize), Mathf.Max(mouseWheel, laternDtSize));
