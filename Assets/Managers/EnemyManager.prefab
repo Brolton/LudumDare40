@@ -51,11 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24b747b89b8c406aa55d41244d621d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  world: {fileID: 114892324765603960, guid: c45c8ac866f646440be905cd588b411c, type: 2}
+  world: {fileID: 0}
   enemyPrefab: {fileID: 1224748645746038, guid: e1d4e1de29a9c4a2aa252424be4e260d,
     type: 2}
   spawnTime: 3
-  timeOfFirstSpawn: 0
+  timeOfFirstSpawn: 1
   MaxEnemiesCount: 3
   MinOffsetFromPlayer: 10
   MaxOffsetFromPlayer: 10

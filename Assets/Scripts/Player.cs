@@ -145,7 +145,6 @@ public class Player : MonoBehaviour
         if (col.gameObject.tag == "firefly")
         {
             FireflyPickedUp();
-            fireflyManager.Spawn();
             Destroy(col.gameObject);
         }
     }

@@ -32,8 +32,8 @@ public class Enemy : MonoBehaviour
             return;
 
         if (Vector3.Distance(player.transform.position, transform.position) > DistToDie)
-        {
-            EnemyManager.instance.OnEnemyDestroyed(this);                    
+        { 
+			Destroy(this.gameObject);                   
         }
         else if (Vector3.Distance(player.transform.position, transform.position) > DistToAttack)
         {
@@ -61,19 +61,15 @@ public class Enemy : MonoBehaviour
             rndDirection = dir;
             rndMovesCount = 30;
         }
-
-        if (transform.position.y > player.transform.position.y)
-        {
-            sprite.sortingOrder = PlayerOrderInLayer - (int)(Mathf.Abs(player.transform.position.y - transform.position.y) / 0.1f);
-        }
-        else
-        {
-            sprite.sortingOrder = PlayerOrderInLayer + (int)((player.transform.position.y - transform.position.y) / 0.1f);
-        }
     }
 
     public void SetTarget(Player target)
     {
         player = target;
     }
+
+	void OnDestroy()
+	{
+		EnemyManager.Instance.OnEnemyDestroyed(this);
+	}
 }
