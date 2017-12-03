@@ -143,7 +143,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1212646636446900}
   m_LocalRotation: {x: -0, y: -0, z: 0.0000014156102, w: 1}
-  m_LocalPosition: {x: -5.676562, y: -1.1404594, z: 4.963043}
+  m_LocalPosition: {x: -5.676562, y: -1.1404594, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4449718955217124}
@@ -348,7 +348,6 @@ MonoBehaviour:
   idleAnim: {fileID: 9100000, guid: 9159084d88fe93740adbdcf8cd499697, type: 2}
   walkAnim: {fileID: 9100000, guid: 79650c4bfa30938468aa5163db4bbeb2, type: 2}
   glowAnim: {fileID: 9100000, guid: ff3c615aa6b498340a854fa298244036, type: 2}
-  dieAnim: {fileID: 9100000, guid: 71edf720aa623d444b51ab72f06b2203, type: 2}
   Heart: {fileID: 0}
 --- !u!114 &114395875546596012
 MonoBehaviour:

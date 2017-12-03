@@ -32,11 +32,13 @@ public class Enemy : MonoBehaviour
         if (player == null)
             return;
 
-        if (Vector3.Distance(player.transform.position, transform.position) > DistToDie)
+		float distanceToPlayer = Vector3.Distance (player.transform.position, transform.position);
+
+		if (distanceToPlayer > DistToDie)
         { 
 			Kill();
         }
-        else if (Vector3.Distance(player.transform.position, transform.position) > DistToAttack)
+		else if (distanceToPlayer > DistToAttack)
         {
             if (rndMovesCount == 0)
             {
@@ -50,7 +52,7 @@ public class Enemy : MonoBehaviour
             if (rndDirection.x != 0)
                 sprite.flipX = (rndDirection.x > 0);
         }
-        else if (Vector3.Distance(player.transform.position, transform.position) > MinDist)
+		else if (distanceToPlayer > MinDist)
         {
             Vector3 dir = player.transform.position - transform.position;
             dir.Normalize();
