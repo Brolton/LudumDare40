@@ -7,7 +7,7 @@ public class World : MonoBehaviour
 	public float groundMinY = 0f;
 	public float groundMaxY = 10f;
 
-    public const int numberOfObstacles = 7;
+    public const int numberOfObstacles = 5;
 
 	public Player player;
 
@@ -18,7 +18,7 @@ public class World : MonoBehaviour
 	void Start ()
     {
 		AddObject (player.gameObject);
-        //ObstacleGenerator();
+        ObstacleGenerator();
 	}
 
     void ObstacleGenerator()
@@ -33,7 +33,7 @@ public class World : MonoBehaviour
 
             do
             {
-                float randomXOffset = Random.Range(10, 20);
+                float randomXOffset = Random.Range(3, 20);
                 bool randomBool = (Random.value < 0.5);
                 if (randomBool) randomXOffset *= -1;
                 float posX = player.transform.position.x + randomXOffset;
