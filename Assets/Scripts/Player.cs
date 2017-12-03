@@ -140,7 +140,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                heartbeat += runningHeartbeatIncrease * Time.deltaTime * NumberOfEnemiesNearby();
+                heartbeat += runningHeartbeatIncrease * Time.deltaTime * (NumberOfEnemiesNearby() + 1);
             }
             else
             {
