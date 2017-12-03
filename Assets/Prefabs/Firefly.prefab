@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4729078140840378}
   - component: {fileID: 212333587978777000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 212931269362977228}
   - component: {fileID: 61224851100592090}
   - component: {fileID: 114966759222567132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Firefly
   m_TagString: firefly
   m_Icon: {fileID: 0}
