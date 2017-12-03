@@ -162,7 +162,8 @@ public class Player : MonoBehaviour
         DestroyEnemiesInsideLightVicinity();
         pickedUpFireflyCountdown = pickedUpFireflyCountdownSet;
 
-        instance.continuoslyDecreaseHeartbeat = heartbeatDecreasePerPickedUpFirefly;            
+        instance.continuoslyDecreaseHeartbeat = heartbeatDecreasePerPickedUpFirefly;         
+        gameManager.PickUpFirefly();   
     }
 
     public void DestroyEnemiesInsideLightVicinity()
