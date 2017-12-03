@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 114055079320905056, guid: 1393f134721713343a75a24b345fa7f8, type: 2}
+  enemyManager: {fileID: 114089814992622798, guid: 33cee77cae8158341af47198d584cc0d,
+    type: 2}
   MoveSpeed: 0.5
   AttackMoveSpeed: 0.9
   DistToDie: 25
