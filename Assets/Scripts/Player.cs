@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     public ApplyTorchEffect torchLightEffect;
 
-    public const float heartbeatDecreasePerPickedUpFirefly = 25f;
+    public const float heartbeatDecreasePerPickedUpFirefly = 20f;
     public const float lengthOfDecreasingHeartbeatAfterPickedUpFirefly = 5f;
     public const float decreaseOfHeartbeatInOneSecond = heartbeatDecreasePerPickedUpFirefly / lengthOfDecreasingHeartbeatAfterPickedUpFirefly;
     public const float maxHeartbeatForRunning = 80f;
@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
     public RuntimeAnimatorController idleAnim;
     public RuntimeAnimatorController walkAnim;
     public RuntimeAnimatorController glowAnim;
+    public RuntimeAnimatorController dieAnim;
 
     Animator animator;
 
@@ -124,6 +125,8 @@ public class Player : MonoBehaviour
         }
         if (heartbeat > 100f)
         {
+            rb2D.velocity = new Vector2(0f, 0f);
+            animator.runtimeAnimatorController = dieAnim;
             gameManager.GameOver();
         }
        
