@@ -7,6 +7,7 @@ public class Firefly : MonoBehaviour
     public Player player;
     public FireflyManager fireflyManager;
 
+	public SpriteRenderer sprite;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class Firefly : MonoBehaviour
 
     void OnDestroy()
     {
+		fireflyManager.OnFireflyDestroyed (this);
         // Effect ?
-        
     }   
 }

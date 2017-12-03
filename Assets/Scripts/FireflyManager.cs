@@ -9,7 +9,7 @@ public class FireflyManager : MonoBehaviour
     public World world;
 
     public const float spawnTime = 7f;    // Spawn time in seconds - NEEDS TO BE ADJUSTED
-    public const float timeOfFirstSpawn = 0f;
+    public float timeOfFirstSpawn = 0f;
     public const float offsetFromBorders = 5f;
 
     public float XSizeOfPlayArea;
@@ -17,9 +17,8 @@ public class FireflyManager : MonoBehaviour
 
     void Start ()
     {
-        Spawn();
+		Invoke ("Spawn", timeOfFirstSpawn);
     }
-
 
     public void Spawn()
     {
@@ -41,6 +40,15 @@ public class FireflyManager : MonoBehaviour
             Spawn();
         }
 
-        Instantiate(firefly, spawnPosition, Quaternion.identity);
+		Firefly newFirefly = Instantiate(firefly, spawnPosition, Quaternion.identity);
+		newFirefly.fireflyManager = this;
+		newFirefly.transform.parent = world.transform;
+		world.AddObject (newFirefly.gameObject);
     }
+
+	public void OnFireflyDestroyed(Firefly firefly)
+	{
+		world.RemoveObject(firefly.gameObject);
+		Spawn();
+	}
 }

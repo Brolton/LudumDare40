@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-
     public World world;
     public GameObject enemyPrefab;
 
@@ -18,12 +17,12 @@ public class EnemyManager : MonoBehaviour
     List<Enemy> enemies = new List<Enemy>();
     int enemyNo = 0;
 
-    static public EnemyManager instance;
+    static public EnemyManager Instance;
 
     void Start()
     {
+		Instance = this;
         InvokeRepeating("Spawn", timeOfFirstSpawn, spawnTime);
-        instance = this;
     }
 
     void Update()
@@ -57,12 +56,13 @@ public class EnemyManager : MonoBehaviour
         newEnemy.transform.parent = world.transform;
 
         enemies.Add(newEnemy);
+		world.AddObject(newEnemy.gameObject);
     }
 
     public void OnEnemyDestroyed(Enemy enemy)
     {
         enemies.Remove(enemy);
-        Destroy(enemy.gameObject);
+		world.RemoveObject(enemy.gameObject);
         Spawn();
     }
 }
