@@ -15,13 +15,20 @@ public class FireflyManager : MonoBehaviour
     public float XSizeOfPlayArea;
     public float YSizeOfPlayArea;
 
+    bool fireflyExists = false;
+
     void Start ()
     {
-		Invoke ("Spawn", timeOfFirstSpawn);
+		InvokeRepeating ("Spawn", timeOfFirstSpawn, 1f);
     }
 
     public void Spawn()
     {
+        if (fireflyExists)
+        {
+            return;
+        }
+
         float randomXOffset = Random.Range(player.lightVicinity, 10);
         bool randomBool = (Random.value < 0.5);
         if (randomBool)
@@ -44,11 +51,14 @@ public class FireflyManager : MonoBehaviour
 		newFirefly.fireflyManager = this;
 		newFirefly.transform.parent = world.transform;
 		world.AddObject (newFirefly.gameObject);
+
+        fireflyExists = true;
     }
 
 	public void OnFireflyDestroyed(Firefly firefly)
 	{
 		world.RemoveObject(firefly.gameObject);
-		Spawn();
+        fireflyExists = false;
+        //Spawn();
 	}
 }

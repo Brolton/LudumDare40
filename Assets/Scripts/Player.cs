@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
     public float speed = normalSpeed;
     public Rigidbody2D rb2D;
-    public float heartbeat = 0;     // value between 0 and 100
-    public float lightVicinity = 5;     // TO BE CHANGED
+    public float heartbeat = 0f;     // value between 0 and 100
+    public float lightVicinity = 15f;     // TO BE CHANGED
 
     public GameManager gameManager;
 
@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        lightVicinity = 15f;
         instance = this;
         animator = this.gameObject.GetComponentInChildren<Animator>();
     }
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
         {
             animator.runtimeAnimatorController = glowAnim;
             pickedUpFireflyCountdown -= Time.deltaTime;
+            rb2D.velocity = new Vector2(0f, 0f);
             return;
         }
 
@@ -132,7 +134,7 @@ public class Player : MonoBehaviour
     {
         foreach (GameObject enemy in GameObject.FindGameObjectsWithTag(enemyTag))
         {
-            if (Vector2.Distance(this.transform.localPosition, enemy.transform.localPosition) < lightVicinity)
+            if (Vector2.Distance(instance.transform.localPosition, enemy.transform.localPosition) < lightVicinity)
             {
                 // Effect ?
                 Destroy(enemy);

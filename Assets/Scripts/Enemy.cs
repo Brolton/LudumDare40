@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     public Player player;
+    public EnemyManager enemyManager;
     public float MoveSpeed = 4f;
     public float AttackMoveSpeed = 6f;
     public float DistToDie = 25f;
@@ -70,6 +71,6 @@ public class Enemy : MonoBehaviour
 
 	void OnDestroy()
 	{
-		EnemyManager.Instance.OnEnemyDestroyed(this);
+        enemyManager.OnEnemyDestroyed(this);
 	}
 }

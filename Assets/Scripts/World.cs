@@ -18,26 +18,30 @@ public class World : MonoBehaviour
 	
 	void Update ()
     {
-		allObjects.Sort((obj1, obj2)=>obj1.transform.position.y.CompareTo(obj2.transform.position.y) );
-		int order = allObjects.Count;
-		foreach(GameObject obj in allObjects) {
-			order--;
-			if (obj.tag == "Player") {
-				Player objSprite = obj.GetComponent<Player>();
-				objSprite.sprite.sortingOrder = order;
-			}
-			else if (obj.tag == "enemy") {
-				Enemy objSprite = obj.GetComponent<Enemy>();
-				objSprite.sprite.sortingOrder = order;
-			}
-			else if (obj.tag == "firefly") {
-				Firefly objSprite = obj.GetComponent<Firefly>();
-				objSprite.sprite.sortingOrder = order;
-			}
-		}
-	}
+        allObjects.Sort((obj1, obj2) => obj1.transform.position.y.CompareTo(obj2.transform.position.y));
+        int order = allObjects.Count;
+        foreach (GameObject obj in allObjects)
+        {
+            order--;
+            if (obj.tag == "Player")
+            {
+                Player objSprite = obj.GetComponent<Player>();
+                objSprite.sprite.sortingOrder = order;
+            }
+            else if (obj.tag == "enemy")
+            {
+                Enemy objSprite = obj.GetComponent<Enemy>();
+                objSprite.sprite.sortingOrder = order;
+            }
+            else if (obj.tag == "firefly")
+            {
+                Firefly objSprite = obj.GetComponent<Firefly>();
+                objSprite.sprite.sortingOrder = order;
+            }
+        }
+    }
 
-	public void AddObject(GameObject obj)
+    public void AddObject(GameObject obj)
 	{
 		allObjects.Add (obj);
 	}
