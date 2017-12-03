@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
         }
 
         // Movement
-        rb2D.velocity = new Vector2(horizontalMovementRaw, vericalMovementRaw) * speed;
+        rb2D.velocity = new Vector2(horizontalMovementRaw, vericalMovementRaw).normalized * speed;
 		if (horizontalMovementRaw != 0)
 			sprite.flipX = (horizontalMovementRaw < 0);     // rotation to direction of movement
 
