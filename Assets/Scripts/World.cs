@@ -18,7 +18,7 @@ public class World : MonoBehaviour
 	void Start ()
     {
 		AddObject (player.gameObject);
-        ObstacleGenerator();
+        //ObstacleGenerator();
 	}
 
     void ObstacleGenerator()
