@@ -17,6 +17,8 @@ public class FireflyManager : MonoBehaviour
 
     bool fireflyExists = false;
 
+	List<Firefly> fireflies = new List<Firefly>();
+
     void Start ()
     {
 		InvokeRepeating ("Spawn", timeOfFirstSpawn, 1f);
@@ -50,6 +52,7 @@ public class FireflyManager : MonoBehaviour
 		Firefly newFirefly = Instantiate(firefly, spawnPosition, Quaternion.identity);
 		newFirefly.fireflyManager = this;
 		newFirefly.transform.parent = world.transform;
+		fireflies.Add(newFirefly);
 		world.AddObject (newFirefly.gameObject);
 
         fireflyExists = true;
@@ -57,8 +60,26 @@ public class FireflyManager : MonoBehaviour
 
 	public void OnFireflyDestroyed(Firefly firefly)
 	{
+		fireflies.Remove(firefly);
 		world.RemoveObject(firefly.gameObject);
         fireflyExists = false;
         Spawn();
+	}
+
+	public Firefly GetNearest()
+	{
+		if (fireflies.Count == 0)
+			return null;
+
+		//fireflies.Sort((obj1, obj2) => obj1.transform.position.y.CompareTo(obj2.transform.position.y));
+
+		fireflies.Sort(delegate(Firefly obj1, Firefly obj2)
+		{
+				float dist1 = Vector3.Distance(obj1.transform.position, player.transform.position);
+				float dist2 = Vector3.Distance(obj2.transform.position, player.transform.position);
+				return dist1.CompareTo(dist2);
+		});
+
+		return fireflies[0];
 	}
 }
