@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Heart : MonoBehaviour 
 {
@@ -8,6 +9,8 @@ public class Heart : MonoBehaviour
 		INCR,
 		DECR
 	}
+
+	public Image heartImage;
 
 	float currentScale = 1f;
 	float curMaxScale;
@@ -45,7 +48,7 @@ public class Heart : MonoBehaviour
 			}
 		}
 
-		GetComponent<RectTransform> ().localScale = new Vector3 (currentScale, currentScale);
+		heartImage.GetComponent<RectTransform> ().localScale = new Vector3 (currentScale, currentScale);
 	}
 
 	public void SetBpm(float bpmPercent) 
