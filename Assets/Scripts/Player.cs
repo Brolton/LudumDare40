@@ -9,7 +9,9 @@ public class Player : MonoBehaviour
     public float heartbeat = 0;     // value between 0 and 100
     public float lightVicinity;
 
-    GameManager gameManager;
+    public GameManager gameManager;
+
+    public FireflyManager fireflyManager;
 
     public const float heartbeatDecreasePerPickedUpFirefly = 25f;     // TO BE CHANGED (placeholder value)
     public const float lengthOfDecreasingHeartbeatAfterPickedUpFirefly = 5f;
@@ -25,13 +27,17 @@ public class Player : MonoBehaviour
 
 	public SpriteRenderer sprite;
 
+    public Player instance;
+
     void Start()
     {
-        
+        instance = this;
     }
 
     void FixedUpdate()
     {
+        Debug.Log(continuoslyDecreaseHeartbeat);
+
         var h = Input.GetAxisRaw("Horizontal");
         var v = Input.GetAxisRaw("Vertical");
 
@@ -59,11 +65,12 @@ public class Player : MonoBehaviour
         {
             gameManager.GameOver();
         }
+       
 
         if (continuoslyDecreaseHeartbeat > 0f)
         {
             heartbeat -= decreaseOfHeartbeatInOneSecond * Time.deltaTime;
-            continuoslyDecreaseHeartbeat -= decreaseOfHeartbeatInOneSecond;
+            continuoslyDecreaseHeartbeat -= decreaseOfHeartbeatInOneSecond * Time.deltaTime;
         }
         else
         {
@@ -82,7 +89,7 @@ public class Player : MonoBehaviour
     {
         DestroyEnemiesInsideLightVicinity();
 
-        continuoslyDecreaseHeartbeat = heartbeatDecreasePerPickedUpFirefly;            
+        instance.continuoslyDecreaseHeartbeat = heartbeatDecreasePerPickedUpFirefly;            
     }
 
     public void DestroyEnemiesInsideLightVicinity()
@@ -94,6 +101,16 @@ public class Player : MonoBehaviour
                 // Effect ?
                 Destroy(enemy);
             }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "firefly")
+        {
+            FireflyPickedUp();
+            fireflyManager.Spawn();
+            Destroy(col.gameObject);
         }
     }
 }

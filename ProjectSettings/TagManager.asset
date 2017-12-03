@@ -8,6 +8,7 @@ TagManager:
   - background_trigger_r
   - background_trigger_l
   - enemy
+  - firefly
   layers:
   - Default
   - TransparentFX

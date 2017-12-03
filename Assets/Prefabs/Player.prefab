@@ -52,12 +52,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4653205348413492}
   - component: {fileID: 212238011411148866}
-  - component: {fileID: 50110994536289608}
   - component: {fileID: 61432363351970318}
+  - component: {fileID: 50110994536289608}
   - component: {fileID: 114055079320905056}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1212646636446900}
   m_LocalRotation: {x: -0, y: -0, z: 0.0000014156102, w: 1}
-  m_LocalPosition: {x: -5.676562, y: -1, z: 4.963043}
+  m_LocalPosition: {x: -5.676562, y: -1.1404594, z: 4.963043}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4449718955217124}
@@ -280,10 +280,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.3, y: 1.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -294,7 +294,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5, y: 3}
   m_EdgeRadius: 0
 --- !u!81 &81629546401409020
 AudioListener:
@@ -318,6 +318,12 @@ MonoBehaviour:
   rb2D: {fileID: 50110994536289608}
   heartbeat: 0
   lightVicinity: 0
+  gameManager: {fileID: 114403960022997446, guid: d356bb4c0a59f6f42975024a6e0e6564,
+    type: 2}
+  fireflyManager: {fileID: 114162074222877076, guid: ce0c5dae523da6948bb30abf4c68a74e,
+    type: 2}
+  sprite: {fileID: 212134909261398700}
+  instance: {fileID: 114055079320905056}
 --- !u!114 &114395875546596012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -339,15 +345,15 @@ MonoBehaviour:
   - 20
   - 30
   flashLightSkew:
-  - {x: 1, y: 2.2}
-  - {x: 0.9, y: 0.8}
+  - {x: 1, y: 1.5}
+  - {x: 1, y: 1}
   flashLightOffset:
   - {x: 0, y: 1}
-  - {x: 0, y: 52}
+  - {x: 0, y: 35}
   flashLightStrength:
-  - 1
+  - 0.9
   - 0.5
-  radius: 2.5
+  radius: 2
 --- !u!124 &124720543700735548
 Behaviour:
   m_ObjectHideFlags: 1

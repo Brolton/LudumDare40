@@ -16,22 +16,11 @@ public class Firefly : MonoBehaviour
     void Update()
     {
 
-    }
-
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        Debug.Log("COLLISION");
-
-        if (col.gameObject == player)
-        {
-            player.FireflyPickedUp();           
-            Destroy(this);
-        }
-    }
+    }   
 
     void OnDestroy()
     {
         // Effect ?
-        fireflyManager.Spawn();
-    }
+        
+    }   
 }

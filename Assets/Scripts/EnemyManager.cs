@@ -33,12 +33,11 @@ public class EnemyManager : MonoBehaviour
 
     void Spawn()
     {
-        Debug.Log(enemies.Count);
+        //Debug.Log(enemies.Count);
 
         if (enemies.Count >= MaxEnemiesCount)
             return;
         
-
         enemyNo++;
 
         float randomXOffset = Random.Range(MinOffsetFromPlayer, MaxOffsetFromPlayer);

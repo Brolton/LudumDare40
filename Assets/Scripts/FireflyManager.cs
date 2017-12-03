@@ -25,8 +25,9 @@ public class FireflyManager : MonoBehaviour
     {
         float randomXOffset = Random.Range(player.lightVicinity, 10);
         bool randomBool = (Random.value < 0.5);
-        if (randomBool) randomXOffset *= -1;
-        float posX = world.player.transform.position.x + randomXOffset;
+        if (randomBool)
+            randomXOffset *= -1;
+        float posX = player.transform.position.x + randomXOffset;
 
         float minPosY = world.groundMinY;
         float maxPosY = world.groundMaxY;

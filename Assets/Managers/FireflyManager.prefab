@@ -53,5 +53,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firefly: {fileID: 114966759222567132, guid: 0dbcb51453f19dd4cbbeebde4f0eb54d, type: 2}
   player: {fileID: 114055079320905056, guid: 1393f134721713343a75a24b345fa7f8, type: 2}
+  world: {fileID: 114892324765603960, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   XSizeOfPlayArea: 0
-  ZSizeOfPlayArea: 0
+  YSizeOfPlayArea: 0
