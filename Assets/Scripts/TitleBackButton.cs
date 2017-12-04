@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -43,7 +43,12 @@ public class TitleBackButton : MonoBehaviour {
 
 		Debug.Log(musicVolSliderControl.value);
         Debug.Log(sfxVolSliderControl.value);
-		
+
+        Debug.Log(options);
+
+        AkSoundEngine.SetRTPCValue("RTPC_Music_Volume", musicVolSliderControl.value);       // Wwise set Music volume
+        AkSoundEngine.SetRTPCValue("RTPC_SFX_Volume", sfxVolSliderControl.value);       // Wwise set SFX volume
+
         if (options == true)
         {
 
@@ -53,14 +58,9 @@ public class TitleBackButton : MonoBehaviour {
             sfxVol.SetActive(true);
             sfxVolSlider.SetActive(true);
 
-            music.volume = musicVolSliderControl.value;
-            sfx.volume = sfxVolSliderControl.value;
-
-			Debug.Log (music.volume);
-			Debug.Log (sfx.volume);
 			// Wwise
-			AkSoundEngine.SetRTPCValue("RTPC_Music_Volume", 0);		// Wwise set Music volume
-			AkSoundEngine.SetRTPCValue("RTPC_SFX_Volume", 0);       // Wwise set SFX volume
+			AkSoundEngine.SetRTPCValue("RTPC_Music_Volume", musicVolSliderControl.value);		// Wwise set Music volume
+			AkSoundEngine.SetRTPCValue("RTPC_SFX_Volume", sfxVolSliderControl.value);       // Wwise set SFX volume
 
         }
 
