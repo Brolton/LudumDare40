@@ -20,15 +20,38 @@ public class Enemy : MonoBehaviour
     public int MinRandomMovingFrames = 20;
 
     public SpriteRenderer sprite;
+
+    Animator animator;
+    public RuntimeAnimatorController idleAnim;
+    public RuntimeAnimatorController recoilAnim;
+
     public int PlayerOrderInLayer = 10;
+
+    float timeToDeath = 0f;
+
 
     void Start()
     {
-
+        animator = this.gameObject.GetComponentInChildren<Animator>();
     }
 
     void Update()
     {
+        if (timeToDeath > 0f)
+        {
+            animator.runtimeAnimatorController = recoilAnim;
+            timeToDeath -= Time.deltaTime;
+
+            if (timeToDeath <= 0f)
+            {
+                ActualDeath();
+            }
+        }
+        else
+        {
+            animator.runtimeAnimatorController = idleAnim;
+        }
+
         if (player == null)
             return;
 
@@ -72,8 +95,14 @@ public class Enemy : MonoBehaviour
     }
 
 	public void Kill()
-	{
-		EnemyManager.instance.OnEnemyDestroyed(this);
-		Destroy(this.gameObject);   
-	}
+	{     
+        timeToDeath = 1f;
+        Debug.Log(timeToDeath);
+    }
+
+    public void ActualDeath()
+    {
+        EnemyManager.instance.OnEnemyDestroyed(this);
+        Destroy(this.gameObject);
+    }
 }
