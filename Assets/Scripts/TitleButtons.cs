@@ -23,6 +23,10 @@ public class TitleButtons : MonoBehaviour {
     void Start () { 
 
         button.SetActive(false);
+		AkSoundEngine.PostEvent ("STOP_heartsAndFireflies", gameObject);	// Wwise stop MUSIC to avoid duplicate music
+		AkSoundEngine.SetRTPCValue ("RTPC_HeartBeat", 0);					// Wwise set heartbeat to 0
+		AkSoundEngine.PostEvent ("PLAY_heartsAndFireflies", gameObject);	// Wwise play MUSIC
+		AkSoundEngine.PostEvent("PLAY_Lantern", gameObject);				// Wwise play lantern fire sound
     }
 
     // Update is called once per frame
@@ -34,7 +38,8 @@ public class TitleButtons : MonoBehaviour {
     {
 
         SceneManager.LoadSceneAsync("GamePlay");
-		AkSoundEngine.PostEvent ("PLAY_game_START", gameObject);
+		AkSoundEngine.PostEvent ("PLAY_game_START", gameObject);			// Wwise play gameStart
+
 
     }
 

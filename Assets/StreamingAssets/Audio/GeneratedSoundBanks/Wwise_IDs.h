@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_FUMBLE = 4244258261U;
         static const AkUniqueID PLAY_GAME_START = 4109843897U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
+        static const AkUniqueID PLAY_HEARTSANDFIREFLIES = 2522220143U;
         static const AkUniqueID PLAY_LANTERN = 1133348338U;
         static const AkUniqueID PLAY_MONSTER_LOOP = 3543968233U;
         static const AkUniqueID PLAY_MONSTER_START = 1690946981U;
@@ -27,6 +28,7 @@ namespace AK
         static const AkUniqueID STOP_BREATH = 2593257294U;
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
         static const AkUniqueID STOP_HEARTBEAT = 3319673256U;
+        static const AkUniqueID STOP_HEARTSANDFIREFLIES = 1256063585U;
         static const AkUniqueID STOP_LANTERN = 180437504U;
         static const AkUniqueID STOP_MONSTER = 1495041834U;
         static const AkUniqueID STOP_MONSTER_ALL = 580469826U;

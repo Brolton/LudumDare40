@@ -63,7 +63,6 @@ public class Player : MonoBehaviour
         animator = this.gameObject.GetComponentInChildren<Animator>();
 
 		//Wwise globals, maybe needs to be moved to a general place
-		AkSoundEngine.PostEvent("PLAY_Lantern", gameObject);			// Wwise play lantern fire sound
 		AkSoundEngine.SetRTPCValue ("RTCP_Movement", 0);				// Wwise set movement to Walk
 		AkSoundEngine.SetRTPCValue ("RTCP_HeartBeat", 0);				// Wwise set movement to Walk
 		AkSoundEngine.PostEvent("PLAY_heartbeat", gameObject);			// Wwise play heartbeat sound

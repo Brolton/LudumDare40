@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
 
 		AkSoundEngine.PostEvent ("PLAY_death", gameObject);					// Wwise play death sound
 		AkSoundEngine.PostEvent ("STOP_heartbeat", gameObject);				// Wwise stop heartbeat sound
+		AkSoundEngine.PostEvent ("STOP_lantern", gameObject);				// Wwise stop lantern sound
+		AkSoundEngine.PostEvent ("STOP_heartsAndHeartbeats", gameObject);	// Wwise stop MUSIC
     }
 
     public void PickUpFirefly() { score += FireflyDtScore; }
