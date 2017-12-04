@@ -191,7 +191,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if (Input.GetKey(KeyCode.LeftShift) && (horizontalMovementRaw != 0 || vericalMovementRaw != 0))
+            if (Input.GetKey(KeyCode.LeftShift) && (horizontalMovementRaw != 0 || vericalMovementRaw != 0) && (heartbeat < maxHeartbeatForRunning))
             {
                 heartbeat += runningHeartbeatIncrease * Time.deltaTime * (NumberOfEnemiesNearby() + 1);
             }
