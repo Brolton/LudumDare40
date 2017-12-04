@@ -27,6 +27,7 @@
 				<Event Id="1690946981" Name="PLAY_monster_START" ObjectPath="\Events\SFX\Monster\PLAY_monster_START"/>
 				<Event Id="201742637" Name="PLAY_pickupFirefly" ObjectPath="\Events\SFX\Character\PLAY_pickupFirefly"/>
 				<Event Id="1444205428" Name="PLAY_startGame" ObjectPath="\Events\SFX\_Global\PLAY_startGame"/>
+				<Event Id="2587511342" Name="PLAY_UI_Feedback" ObjectPath="\Events\Default Work Unit\PLAY_UI_Feedback"/>
 				<Event Id="2593257294" Name="STOP_breath" ObjectPath="\Events\SFX\Character\STOP_breath" MaxAttenuation="0.000000"/>
 				<Event Id="2963349357" Name="STOP_footsteps" ObjectPath="\Events\SFX\Character\STOP_footsteps" MaxAttenuation="0.000000"/>
 				<Event Id="3319673256" Name="STOP_heartbeat" ObjectPath="\Events\SFX\Character\STOP_heartbeat" MaxAttenuation="0.000000"/>
@@ -103,6 +104,10 @@
 					<ShortName>monsters\yum\monster_yum_04.wav</ShortName>
 					<Path>SFX\monsters\yum\monster_yum_04_E35A76B0.wem</Path>
 				</File>
+				<File Id="256964646" Language="SFX">
+					<ShortName>UI_feedback_02.wav</ShortName>
+					<Path>SFX\UI_feedback_02_E35A76B0.wem</Path>
+				</File>
 				<File Id="259976604" Language="SFX">
 					<ShortName>heartbeat\character_hearthBeatFast.wav</ShortName>
 					<Path>SFX\heartbeat\character_hearthBeatFast_D2927CEA.wem</Path>
@@ -123,6 +128,10 @@
 					<ShortName>monsters\growl\monster_growl_14.wav</ShortName>
 					<Path>SFX\monsters\growl\monster_growl_14_E35A76B0.wem</Path>
 				</File>
+				<File Id="336806915" Language="SFX">
+					<ShortName>UI_feedback_03.wav</ShortName>
+					<Path>SFX\UI_feedback_03_E35A76B0.wem</Path>
+				</File>
 				<File Id="371055433" Language="SFX">
 					<ShortName>monsters\growl\monster_growl_05.wav</ShortName>
 					<Path>SFX\monsters\growl\monster_growl_05_E35A76B0.wem</Path>
@@ -130,6 +139,10 @@
 				<File Id="385213280" Language="SFX">
 					<ShortName>character\footsteps\dirt\dirt_04.wav</ShortName>
 					<Path>SFX\character\footsteps\dirt\dirt_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="416235910" Language="SFX">
+					<ShortName>UI_feedback_01.wav</ShortName>
+					<Path>SFX\UI_feedback_01_E35A76B0.wem</Path>
 				</File>
 				<File Id="429147928" Language="SFX">
 					<ShortName>VO\crying\character_VO_crying_05.wav</ShortName>
