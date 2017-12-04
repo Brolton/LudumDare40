@@ -59,6 +59,7 @@ ANIMATION,ANIMAZIONE,ANIMATION,ANIMÁCIA,АНИМАЦИЯ,אנימציה,";
                 languageId = -1;
                 break;
         }
+        Debug.Log("language id " + languageId);
         foreach (var text in texts)
         {
             LocaliseUIElement(text);
