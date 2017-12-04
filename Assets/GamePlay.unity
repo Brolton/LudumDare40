@@ -573,7 +573,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1516701698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 628, y: 307, z: 0}
+  m_LocalPosition: {x: 187.5, y: 343, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1646828276}
@@ -750,23 +750,7 @@ Prefab:
       propertyPath: Heart
       value: 
       objectReference: {fileID: 886145200}
-    - target: {fileID: 212041171682663178, guid: c45c8ac866f646440be905cd588b411c,
-        type: 2}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61622013688766590, guid: c45c8ac866f646440be905cd588b411c,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.12799391
-      objectReference: {fileID: 0}
-    - target: {fileID: 61622013688766590, guid: c45c8ac866f646440be905cd588b411c,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1.844012
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 81883146654033044, guid: c45c8ac866f646440be905cd588b411c, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1710766777 stripped
@@ -843,44 +827,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1999280977 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1786835420567830, guid: c45c8ac866f646440be905cd588b411c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1710766776}
---- !u!114 &1999280979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1999280977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a77eec556d4fb342ad99fe90b5b7de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
---- !u!114 &1999280980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1999280977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9247d448ef13c4458e996f6b03c31c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_positionOffsetData:
-    positionOffset: {x: 0, y: 0, z: 0}
-    KeepMe: 0
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_listeners:
-    initialListenerList: []
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!114 &2094259540 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114892324765603960, guid: c45c8ac866f646440be905cd588b411c,
