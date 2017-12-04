@@ -97,7 +97,6 @@ public class Enemy : MonoBehaviour
 	public void Kill()
 	{     
         timeToDeath = 1f;
-        Debug.Log(timeToDeath);
     }
 
     public void ActualDeath()

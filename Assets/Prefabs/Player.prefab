@@ -342,13 +342,17 @@ MonoBehaviour:
   fireflyManager: {fileID: 114162074222877076, guid: ce0c5dae523da6948bb30abf4c68a74e,
     type: 2}
   torchLightEffect: {fileID: 0}
+  flashEffect: {fileID: 1473575372735644, guid: b6d483d4b9e7d7f4b9e7c8579f36a0ed,
+    type: 2}
   sprite: {fileID: 212134909261398700}
   instance: {fileID: 114055079320905056}
   runAnim: {fileID: 0}
   idleAnim: {fileID: 9100000, guid: 9159084d88fe93740adbdcf8cd499697, type: 2}
   walkAnim: {fileID: 9100000, guid: 79650c4bfa30938468aa5163db4bbeb2, type: 2}
   glowAnim: {fileID: 9100000, guid: ff3c615aa6b498340a854fa298244036, type: 2}
+  dieAnim: {fileID: 0}
   Heart: {fileID: 0}
+  death: 0
 --- !u!114 &114395875546596012
 MonoBehaviour:
   m_ObjectHideFlags: 1

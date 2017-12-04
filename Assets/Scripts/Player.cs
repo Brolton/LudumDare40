@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
 
     public ApplyTorchEffect torchLightEffect;
 
+    public GameObject flashEffect;
+
     public const float heartbeatDecreasePerPickedUpFirefly = 20f;
     public const float lengthOfDecreasingHeartbeatAfterPickedUpFirefly = 5f;
     public const float decreaseOfHeartbeatInOneSecond = heartbeatDecreasePerPickedUpFirefly / lengthOfDecreasingHeartbeatAfterPickedUpFirefly;
@@ -185,6 +187,8 @@ public class Player : MonoBehaviour
 
     public void FireflyPickedUp()
     {
+        Instantiate(flashEffect, instance.transform.position, Quaternion.identity);
+
         DestroyEnemiesInsideLightVicinity();
         pickedUpFireflyCountdown = pickedUpFireflyCountdownSet;
 
@@ -197,8 +201,7 @@ public class Player : MonoBehaviour
         foreach (GameObject enemy in GameObject.FindGameObjectsWithTag(enemyTag))
         {
             if (Vector2.Distance(instance.transform.localPosition, enemy.transform.localPosition) < killEnemyDistance)
-            {
-                // Effect ?
+            {               
 				enemy.GetComponent<Enemy>().Kill();
             }
         }
