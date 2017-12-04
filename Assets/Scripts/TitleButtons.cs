@@ -46,6 +46,7 @@ public class TitleButtons : MonoBehaviour {
     public void OnClickOptions()
     {
             
+	    button.GetComponent<TitleBackButton>().options = true;
             button.SetActive(true);
             button1.SetActive(false);
             button3.SetActive(false);
@@ -60,7 +61,7 @@ public class TitleButtons : MonoBehaviour {
         button.GetComponent<TitleBackButton>().options = true;
 
             button2.SetActive(false);
-
+		AkSoundEngine.PostEvent ("PLAY_UI_Feedback", gameObject);
     }
 
     public void OnClickCredits()
@@ -80,6 +81,8 @@ public class TitleButtons : MonoBehaviour {
         button.GetComponent<TitleBackButton>().credits = true;
 
         button3.SetActive(false);
+
+		AkSoundEngine.PostEvent ("PLAY_UI_Feedback", gameObject);
 
     }
 

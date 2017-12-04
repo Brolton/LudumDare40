@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_MONSTER_START = 1690946981U;
         static const AkUniqueID PLAY_PICKUPFIREFLY = 201742637U;
         static const AkUniqueID PLAY_STARTGAME = 1444205428U;
+        static const AkUniqueID PLAY_UI_FEEDBACK = 2587511342U;
         static const AkUniqueID STOP_BREATH = 2593257294U;
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
         static const AkUniqueID STOP_HEARTBEAT = 3319673256U;

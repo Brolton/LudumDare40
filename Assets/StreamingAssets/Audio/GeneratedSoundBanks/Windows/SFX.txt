@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1444205428	PLAY_startGame			\SFX\_Global\PLAY_startGame	
 	1495041834	STOP_monster			\SFX\Monster\STOP_monster	
 	1690946981	PLAY_monster_START			\SFX\Monster\PLAY_monster_START	
+	2587511342	PLAY_UI_Feedback			\Default Work Unit\PLAY_UI_Feedback	
 	2593257294	STOP_breath			\SFX\Character\STOP_breath	
 	2963349357	STOP_footsteps			\SFX\Character\STOP_footsteps	
 	3319673256	STOP_heartbeat			\SFX\Character\STOP_heartbeat	
@@ -49,13 +50,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	248002808	dirt_16	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_16_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_16		4449
 	249002494	dirt_07	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_07_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_07		4371
 	255110914	monster_yum_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\yum\monster_yum_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\yum\monster_yum_04		10978
+	256964646	UI_feedback_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\UI_feedback_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\feedback\UI_feedback_02		3934
 	259976604	character_hearthBeatFast	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\heartbeat\character_hearthBeatFast_D2927CEA.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\heartbeat\character_hearthBeatFast		168830
 	269935127	character_VO_crying_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\crying\character_VO_crying_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\crying\character_VO_crying_01		41195
 	272987922	monster_yum_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\yum\monster_yum_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\yum\monster_yum_03		16157
 	275853590	monster_growl_09	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_09_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_09		18854
 	302899706	monster_growl_14	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_14_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_14		12909
+	336806915	UI_feedback_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\UI_feedback_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\feedback\UI_feedback_03		3859
 	371055433	monster_growl_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_05		20362
 	385213280	dirt_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_04		3932
+	416235910	UI_feedback_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\UI_feedback_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\feedback\UI_feedback_01		4016
 	429147928	character_VO_crying_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\crying\character_VO_crying_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\crying\character_VO_crying_05		22740
 	438243077	dirt_17	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_17_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_17		4545
 	444999263	character_VO_catchFirefly_06	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_06_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_06		9135
