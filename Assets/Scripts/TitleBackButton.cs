@@ -95,6 +95,7 @@ public class TitleBackButton : MonoBehaviour {
         sfxVolSlider.SetActive(false);
         this.gameObject.SetActive(false);
 
+		AkSoundEngine.PostEvent ("PLAY_UI_Feedback", gameObject);
     }
 
 }
