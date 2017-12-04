@@ -8,6 +8,6 @@ public class CursorManager : MonoBehaviour
 
     void Start ()
     {
-        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(cursorTexture, new Vector2(20.5f, 20.5f), CursorMode.Auto);
     }
 }
