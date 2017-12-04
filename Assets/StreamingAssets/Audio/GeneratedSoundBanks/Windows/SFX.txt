@@ -1,0 +1,115 @@
+Event	ID	Name			Wwise Object Path	Notes
+	180437504	STOP_lantern			\SFX\Character\STOP_lantern	
+	201742637	PLAY_pickupFirefly			\SFX\Character\PLAY_pickupFirefly	
+	580469826	STOP_monster_ALL			\SFX\Monster\STOP_monster_ALL	
+	1133348338	PLAY_lantern			\SFX\Character\PLAY_lantern	
+	1172822028	PLAY_death			\SFX\Character\PLAY_death	
+	1444205428	PLAY_startGame			\SFX\_Global\PLAY_startGame	
+	1495041834	STOP_monster			\SFX\Monster\STOP_monster	
+	1690946981	PLAY_monster_START			\SFX\Monster\PLAY_monster_START	
+	2593257294	STOP_breath			\SFX\Character\STOP_breath	
+	2963349357	STOP_footsteps			\SFX\Character\STOP_footsteps	
+	3543968233	PLAY_monster_LOOP			\SFX\Monster\PLAY_monster_LOOP	
+	3698047240	PLAY_breath			\SFX\Character\PLAY_breath	
+	3854155799	PLAY_footsteps			\SFX\Character\PLAY_footsteps	
+	4109843897	PLAY_game_START			\SFX\Character\PLAY_game_START	
+	4244258261	PLAY_fumble			\SFX\Character\PLAY_fumble	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2179486487	Heartbeat			\Default Work Unit\Heartbeat	
+
+Switch	ID	Name	Switch Group			Notes
+	545371365	Low	Heartbeat			
+	1026627430	Middle	Heartbeat			
+	3550808449	High	Heartbeat			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	813601384	RTPC_Movement			\Default Work Unit\RTPC_Movement	
+	870318650	RTPC_MonsterDistance			\Default Work Unit\RTPC_MonsterDistance	
+	2136815501	RTPC_HeartBeat			\Default Work Unit\RTPC_HeartBeat	
+	2999519122	RTPC_MonsterPosition			\Default Work Unit\RTPC_MonsterPosition	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	19847126	monster_growl_10	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_10_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_10		9305
+	30581845	monster_chomp_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\chomp\monster_chomp_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\chomp\monster_chomp_01		27614
+	39527152	dirt_19	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_19_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_19		4994
+	44683655	monster_laughter_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_04		17661
+	59456134	character_VO_crying_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\crying\character_VO_crying_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\crying\character_VO_crying_04		22818
+	74526808	monster_laughter_07	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_07_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_07		19804
+	88713166	character_VO_catchFirefly_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_03		5985
+	117458373	monster_growl_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_02		18815
+	118513948	cracklingFire_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\lantern\cracklingFire_01_85044723.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\lantern\cracklingFire_01		198092
+	146695426	monster_growl_06	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_06_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_06		20328
+	183184597	dirt_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_01		4749
+	183391941	monster_loop_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\loop\monster_loop_01_AFC486A7.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\loop\monster_loop_01		76112
+	189827081	monster_laughter_06	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_06_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_06		18869
+	195975800	dirt_10	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_10_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_10		4292
+	248002808	dirt_16	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_16_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_16		4449
+	249002494	dirt_07	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_07_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_07		4371
+	255110914	monster_yum_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\yum\monster_yum_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\yum\monster_yum_04		10978
+	259976604	character_hearthBeatFast	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\heartbeat\character_hearthBeatFast_D2927CEA.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\heartbeat\character_hearthBeatFast		168830
+	269935127	character_VO_crying_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\crying\character_VO_crying_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\crying\character_VO_crying_01		41195
+	272987922	monster_yum_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\yum\monster_yum_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\yum\monster_yum_03		16157
+	275853590	monster_growl_09	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_09_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_09		18854
+	302899706	monster_growl_14	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_14_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_14		12909
+	371055433	monster_growl_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_05		20362
+	385213280	dirt_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_04		3932
+	429147928	character_VO_crying_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\crying\character_VO_crying_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\crying\character_VO_crying_05		22740
+	438243077	dirt_17	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_17_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_17		4545
+	444999263	character_VO_catchFirefly_06	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_06_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_06		9135
+	468817476	monster_yum_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\yum\monster_yum_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\yum\monster_yum_01		16513
+	468908659	monster_yum_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\yum\monster_yum_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\yum\monster_yum_02		10929
+	478581166	monster_loop_07	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\loop\monster_loop_07_18BAFCE5.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\loop\monster_loop_07		139284
+	480516114	monster_growl_07	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_07_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_07		19990
+	504403230	monster_chomp_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\chomp\monster_chomp_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\chomp\monster_chomp_04		24281
+	549932869	monster_growl_08	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_08_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_08		22420
+	570931910	monster_laughter_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_03		16463
+	585216652	character_VO_fumble_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\fumble\character_VO_fumble_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\fumble\character_VO_fumble_01		6866
+	590920411	character_VO_deathVoice_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\deathVoice\character_VO_deathVoice_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\deathVoice\character_VO_deathVoice_02		22048
+	632873210	character_VO_catchFirefly_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_04		5002
+	636559009	monster_laughter_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_02		20781
+	636653372	monster_growl_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_01		21781
+	652328230	dirt_11	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_11_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_11		4172
+	654593010	monster_loop_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\loop\monster_loop_04_2AEB698D.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\loop\monster_loop_04		114979
+	656195797	dirt_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_02		4909
+	668526124	character_hearthBeatSlow	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\heartbeat\character_hearthBeatSlow_D2927CEA.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\heartbeat\character_hearthBeatSlow		194041
+	675585752	cracklingFire_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\lantern\cracklingFire_02_0B102EB8.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\lantern\cracklingFire_02		149752
+	699815321	monster_loop_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\loop\monster_loop_05_9B2259C0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\loop\monster_loop_05		120308
+	708758647	monster_growl_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_03		22568
+	712255451	character_VO_deathVoice_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\deathVoice\character_VO_deathVoice_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\deathVoice\character_VO_deathVoice_01		13213
+	716647567	dirt_20	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_20_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_20		5434
+	735083499	monster_laughter_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_05		16385
+	735683196	dirt_09	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_09_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_09		4587
+	751240363	dirt_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_03		4792
+	755715763	monster_loop_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\loop\monster_loop_03_0D31E7D4.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\loop\monster_loop_03		102777
+	756465445	monster_growl_13	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_13_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_13		7683
+	770337879	monster_laughter_08	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_08_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_08		25438
+	778856775	dirt_15	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_15_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_15		4182
+	787065534	monster_chomp_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\chomp\monster_chomp_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\chomp\monster_chomp_05		28480
+	801088097	dirt_06	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_06_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_06		4806
+	810615914	monster_growl_12	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_12_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_12		19936
+	814030245	dirt_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_05		4775
+	823863048	character_VO_crying_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\crying\character_VO_crying_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\crying\character_VO_crying_02		35531
+	838501361	monster_loop_06	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\loop\monster_loop_06_463A43DC.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\loop\monster_loop_06		126969
+	841160115	character_VO_catchFirefly_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_01		8240
+	850282093	monster_loop_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\loop\monster_loop_02_0E5C46C4.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\loop\monster_loop_02		98773
+	853789937	character_VO_catchFirefly_07	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_07_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_07		6128
+	874422584	dirt_08	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_08_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_08		4725
+	887935489	monster_laughter_01	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\laughter\monster_laughter_01_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\laughter\monster_laughter_01		18378
+	913170127	dirt_12	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_12_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_12		4264
+	920253950	monster_chomp_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\chomp\monster_chomp_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\chomp\monster_chomp_02		23191
+	920627675	character_VO_catchFirefly_05	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_05_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_05		9606
+	924804847	cracklingFire_lightUp	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\cracklingFire_lightUp_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\cracklingFire_lightUp		54270
+	929258187	character_VO_crying_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\crying\character_VO_crying_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\UI\startGame\crying\character_VO_crying_03		19106
+	938927229	monster_chomp_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\chomp\monster_chomp_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\chomp\monster_chomp_03		34167
+	939014337	dirt_13	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_13_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_13		4666
+	946141668	dirt_14	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_14_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_14		5072
+	949832568	character_VO_fumble_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\fumble\character_VO_fumble_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\fumble\character_VO_fumble_02		2637
+	988993288	monster_chomp_06	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\chomp\monster_chomp_06_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\chomp\monster_chomp_06		23112
+	998206313	monster_growl_11	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_11_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_11		16140
+	1022470695	character_VO_fumble_03	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\fumble\character_VO_fumble_03_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\fumble\character_VO_fumble_03		5713
+	1029375865	character_VO_catchFirefly_02	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\VO\catchFirefly\character_VO_catchFirefly_02_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\VO\catchFirefly\character_VO_catchFirefly_02		6516
+	1042368417	dirt_18	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\character\footsteps\dirt\dirt_18_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\character\footsteps\dirt\dirt_18		4572
+	1062741037	monster_growl_04	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_04_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_04		34985
+	1069371178	monster_growl_15	I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\SFX\monsters\growl\monster_growl_15_E35A76B0.wem		\Actor-Mixer Hierarchy\SFX\SFX Master\monsters\enterLight\growl\monster_growl_15		9195
+

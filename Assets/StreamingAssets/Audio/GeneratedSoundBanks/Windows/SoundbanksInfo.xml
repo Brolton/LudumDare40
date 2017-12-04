@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\</ProjectRoot>
+		<SourceFilesRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3698047240" Name="PLAY_breath" ObjectPath="\Events\SFX\Character\PLAY_breath"/>
+				<Event Id="1172822028" Name="PLAY_death" ObjectPath="\Events\SFX\Character\PLAY_death"/>
+				<Event Id="3854155799" Name="PLAY_footsteps" ObjectPath="\Events\SFX\Character\PLAY_footsteps"/>
+				<Event Id="4244258261" Name="PLAY_fumble" ObjectPath="\Events\SFX\Character\PLAY_fumble"/>
+				<Event Id="4109843897" Name="PLAY_game_START" ObjectPath="\Events\SFX\Character\PLAY_game_START"/>
+				<Event Id="1133348338" Name="PLAY_lantern" ObjectPath="\Events\SFX\Character\PLAY_lantern"/>
+				<Event Id="3543968233" Name="PLAY_monster_LOOP" ObjectPath="\Events\SFX\Monster\PLAY_monster_LOOP"/>
+				<Event Id="1690946981" Name="PLAY_monster_START" ObjectPath="\Events\SFX\Monster\PLAY_monster_START"/>
+				<Event Id="201742637" Name="PLAY_pickupFirefly" ObjectPath="\Events\SFX\Character\PLAY_pickupFirefly"/>
+				<Event Id="1444205428" Name="PLAY_startGame" ObjectPath="\Events\SFX\_Global\PLAY_startGame"/>
+				<Event Id="2593257294" Name="STOP_breath" ObjectPath="\Events\SFX\Character\STOP_breath" MaxAttenuation="0.000000"/>
+				<Event Id="2963349357" Name="STOP_footsteps" ObjectPath="\Events\SFX\Character\STOP_footsteps" MaxAttenuation="0.000000"/>
+				<Event Id="180437504" Name="STOP_lantern" ObjectPath="\Events\SFX\Character\STOP_lantern" MaxAttenuation="0.000000"/>
+				<Event Id="1495041834" Name="STOP_monster" ObjectPath="\Events\SFX\Monster\STOP_monster" MaxAttenuation="0.000000"/>
+				<Event Id="580469826" Name="STOP_monster_ALL" ObjectPath="\Events\SFX\Monster\STOP_monster_ALL" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="19847126" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_10.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_10_E35A76B0.wem</Path>
+				</File>
+				<File Id="30581845" Language="SFX">
+					<ShortName>monsters\chomp\monster_chomp_01.wav</ShortName>
+					<Path>SFX\monsters\chomp\monster_chomp_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="39527152" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_19.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_19_E35A76B0.wem</Path>
+				</File>
+				<File Id="44683655" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_04.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="59456134" Language="SFX">
+					<ShortName>VO\crying\character_VO_crying_04.wav</ShortName>
+					<Path>SFX\VO\crying\character_VO_crying_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="74526808" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_07.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_07_E35A76B0.wem</Path>
+				</File>
+				<File Id="88713166" Language="SFX">
+					<ShortName>VO\catchFirefly\character_VO_catchFirefly_03.wav</ShortName>
+					<Path>SFX\VO\catchFirefly\character_VO_catchFirefly_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="117458373" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_02.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="118513948" Language="SFX">
+					<ShortName>lantern\cracklingFire_01.wav</ShortName>
+					<Path>SFX\lantern\cracklingFire_01_85044723.wem</Path>
+				</File>
+				<File Id="146695426" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_06.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_06_E35A76B0.wem</Path>
+				</File>
+				<File Id="183184597" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_01.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="183391941" Language="SFX">
+					<ShortName>monsters\loop\monster_loop_01.wav</ShortName>
+					<Path>SFX\monsters\loop\monster_loop_01_AFC486A7.wem</Path>
+				</File>
+				<File Id="189827081" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_06.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_06_E35A76B0.wem</Path>
+				</File>
+				<File Id="195975800" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_10.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_10_E35A76B0.wem</Path>
+				</File>
+				<File Id="248002808" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_16.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_16_E35A76B0.wem</Path>
+				</File>
+				<File Id="249002494" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_07.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_07_E35A76B0.wem</Path>
+				</File>
+				<File Id="255110914" Language="SFX">
+					<ShortName>monsters\yum\monster_yum_04.wav</ShortName>
+					<Path>SFX\monsters\yum\monster_yum_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="259976604" Language="SFX">
+					<ShortName>heartbeat\character_hearthBeatFast.wav</ShortName>
+					<Path>SFX\heartbeat\character_hearthBeatFast_D2927CEA.wem</Path>
+				</File>
+				<File Id="269935127" Language="SFX">
+					<ShortName>VO\crying\character_VO_crying_01.wav</ShortName>
+					<Path>SFX\VO\crying\character_VO_crying_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="272987922" Language="SFX">
+					<ShortName>monsters\yum\monster_yum_03.wav</ShortName>
+					<Path>SFX\monsters\yum\monster_yum_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="275853590" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_09.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_09_E35A76B0.wem</Path>
+				</File>
+				<File Id="302899706" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_14.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_14_E35A76B0.wem</Path>
+				</File>
+				<File Id="371055433" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_05.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_05_E35A76B0.wem</Path>
+				</File>
+				<File Id="385213280" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_04.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="429147928" Language="SFX">
+					<ShortName>VO\crying\character_VO_crying_05.wav</ShortName>
+					<Path>SFX\VO\crying\character_VO_crying_05_E35A76B0.wem</Path>
+				</File>
+				<File Id="438243077" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_17.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_17_E35A76B0.wem</Path>
+				</File>
+				<File Id="444999263" Language="SFX">
+					<ShortName>VO\catchFirefly\character_VO_catchFirefly_06.wav</ShortName>
+					<Path>SFX\VO\catchFirefly\character_VO_catchFirefly_06_E35A76B0.wem</Path>
+				</File>
+				<File Id="468817476" Language="SFX">
+					<ShortName>monsters\yum\monster_yum_01.wav</ShortName>
+					<Path>SFX\monsters\yum\monster_yum_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="468908659" Language="SFX">
+					<ShortName>monsters\yum\monster_yum_02.wav</ShortName>
+					<Path>SFX\monsters\yum\monster_yum_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="478581166" Language="SFX">
+					<ShortName>monsters\loop\monster_loop_07.wav</ShortName>
+					<Path>SFX\monsters\loop\monster_loop_07_18BAFCE5.wem</Path>
+				</File>
+				<File Id="480516114" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_07.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_07_E35A76B0.wem</Path>
+				</File>
+				<File Id="504403230" Language="SFX">
+					<ShortName>monsters\chomp\monster_chomp_04.wav</ShortName>
+					<Path>SFX\monsters\chomp\monster_chomp_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="549932869" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_08.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_08_E35A76B0.wem</Path>
+				</File>
+				<File Id="570931910" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_03.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="585216652" Language="SFX">
+					<ShortName>VO\fumble\character_VO_fumble_01.wav</ShortName>
+					<Path>SFX\VO\fumble\character_VO_fumble_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="590920411" Language="SFX">
+					<ShortName>VO\deathVoice\character_VO_deathVoice_02.wav</ShortName>
+					<Path>SFX\VO\deathVoice\character_VO_deathVoice_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="632873210" Language="SFX">
+					<ShortName>VO\catchFirefly\character_VO_catchFirefly_04.wav</ShortName>
+					<Path>SFX\VO\catchFirefly\character_VO_catchFirefly_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="636559009" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_02.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="636653372" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_01.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="652328230" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_11.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_11_E35A76B0.wem</Path>
+				</File>
+				<File Id="654593010" Language="SFX">
+					<ShortName>monsters\loop\monster_loop_04.wav</ShortName>
+					<Path>SFX\monsters\loop\monster_loop_04_2AEB698D.wem</Path>
+				</File>
+				<File Id="656195797" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_02.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="668526124" Language="SFX">
+					<ShortName>heartbeat\character_hearthBeatSlow.wav</ShortName>
+					<Path>SFX\heartbeat\character_hearthBeatSlow_D2927CEA.wem</Path>
+				</File>
+				<File Id="675585752" Language="SFX">
+					<ShortName>lantern\cracklingFire_02.wav</ShortName>
+					<Path>SFX\lantern\cracklingFire_02_0B102EB8.wem</Path>
+				</File>
+				<File Id="699815321" Language="SFX">
+					<ShortName>monsters\loop\monster_loop_05.wav</ShortName>
+					<Path>SFX\monsters\loop\monster_loop_05_9B2259C0.wem</Path>
+				</File>
+				<File Id="708758647" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_03.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="712255451" Language="SFX">
+					<ShortName>VO\deathVoice\character_VO_deathVoice_01.wav</ShortName>
+					<Path>SFX\VO\deathVoice\character_VO_deathVoice_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="716647567" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_20.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_20_E35A76B0.wem</Path>
+				</File>
+				<File Id="735083499" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_05.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_05_E35A76B0.wem</Path>
+				</File>
+				<File Id="735683196" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_09.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_09_E35A76B0.wem</Path>
+				</File>
+				<File Id="751240363" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_03.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="755715763" Language="SFX">
+					<ShortName>monsters\loop\monster_loop_03.wav</ShortName>
+					<Path>SFX\monsters\loop\monster_loop_03_0D31E7D4.wem</Path>
+				</File>
+				<File Id="756465445" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_13.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_13_E35A76B0.wem</Path>
+				</File>
+				<File Id="770337879" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_08.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_08_E35A76B0.wem</Path>
+				</File>
+				<File Id="778856775" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_15.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_15_E35A76B0.wem</Path>
+				</File>
+				<File Id="787065534" Language="SFX">
+					<ShortName>monsters\chomp\monster_chomp_05.wav</ShortName>
+					<Path>SFX\monsters\chomp\monster_chomp_05_E35A76B0.wem</Path>
+				</File>
+				<File Id="801088097" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_06.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_06_E35A76B0.wem</Path>
+				</File>
+				<File Id="810615914" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_12.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_12_E35A76B0.wem</Path>
+				</File>
+				<File Id="814030245" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_05.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_05_E35A76B0.wem</Path>
+				</File>
+				<File Id="823863048" Language="SFX">
+					<ShortName>VO\crying\character_VO_crying_02.wav</ShortName>
+					<Path>SFX\VO\crying\character_VO_crying_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="838501361" Language="SFX">
+					<ShortName>monsters\loop\monster_loop_06.wav</ShortName>
+					<Path>SFX\monsters\loop\monster_loop_06_463A43DC.wem</Path>
+				</File>
+				<File Id="841160115" Language="SFX">
+					<ShortName>VO\catchFirefly\character_VO_catchFirefly_01.wav</ShortName>
+					<Path>SFX\VO\catchFirefly\character_VO_catchFirefly_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="850282093" Language="SFX">
+					<ShortName>monsters\loop\monster_loop_02.wav</ShortName>
+					<Path>SFX\monsters\loop\monster_loop_02_0E5C46C4.wem</Path>
+				</File>
+				<File Id="853789937" Language="SFX">
+					<ShortName>VO\catchFirefly\character_VO_catchFirefly_07.wav</ShortName>
+					<Path>SFX\VO\catchFirefly\character_VO_catchFirefly_07_E35A76B0.wem</Path>
+				</File>
+				<File Id="874422584" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_08.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_08_E35A76B0.wem</Path>
+				</File>
+				<File Id="887935489" Language="SFX">
+					<ShortName>monsters\laughter\monster_laughter_01.wav</ShortName>
+					<Path>SFX\monsters\laughter\monster_laughter_01_E35A76B0.wem</Path>
+				</File>
+				<File Id="913170127" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_12.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_12_E35A76B0.wem</Path>
+				</File>
+				<File Id="920253950" Language="SFX">
+					<ShortName>monsters\chomp\monster_chomp_02.wav</ShortName>
+					<Path>SFX\monsters\chomp\monster_chomp_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="920627675" Language="SFX">
+					<ShortName>VO\catchFirefly\character_VO_catchFirefly_05.wav</ShortName>
+					<Path>SFX\VO\catchFirefly\character_VO_catchFirefly_05_E35A76B0.wem</Path>
+				</File>
+				<File Id="924804847" Language="SFX">
+					<ShortName>cracklingFire_lightUp.wav</ShortName>
+					<Path>SFX\cracklingFire_lightUp_E35A76B0.wem</Path>
+				</File>
+				<File Id="929258187" Language="SFX">
+					<ShortName>VO\crying\character_VO_crying_03.wav</ShortName>
+					<Path>SFX\VO\crying\character_VO_crying_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="938927229" Language="SFX">
+					<ShortName>monsters\chomp\monster_chomp_03.wav</ShortName>
+					<Path>SFX\monsters\chomp\monster_chomp_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="939014337" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_13.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_13_E35A76B0.wem</Path>
+				</File>
+				<File Id="946141668" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_14.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_14_E35A76B0.wem</Path>
+				</File>
+				<File Id="949832568" Language="SFX">
+					<ShortName>VO\fumble\character_VO_fumble_02.wav</ShortName>
+					<Path>SFX\VO\fumble\character_VO_fumble_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="988993288" Language="SFX">
+					<ShortName>monsters\chomp\monster_chomp_06.wav</ShortName>
+					<Path>SFX\monsters\chomp\monster_chomp_06_E35A76B0.wem</Path>
+				</File>
+				<File Id="998206313" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_11.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_11_E35A76B0.wem</Path>
+				</File>
+				<File Id="1022470695" Language="SFX">
+					<ShortName>VO\fumble\character_VO_fumble_03.wav</ShortName>
+					<Path>SFX\VO\fumble\character_VO_fumble_03_E35A76B0.wem</Path>
+				</File>
+				<File Id="1029375865" Language="SFX">
+					<ShortName>VO\catchFirefly\character_VO_catchFirefly_02.wav</ShortName>
+					<Path>SFX\VO\catchFirefly\character_VO_catchFirefly_02_E35A76B0.wem</Path>
+				</File>
+				<File Id="1042368417" Language="SFX">
+					<ShortName>character\footsteps\dirt\dirt_18.wav</ShortName>
+					<Path>SFX\character\footsteps\dirt\dirt_18_E35A76B0.wem</Path>
+				</File>
+				<File Id="1062741037" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_04.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_04_E35A76B0.wem</Path>
+				</File>
+				<File Id="1069371178" Language="SFX">
+					<ShortName>monsters\growl\monster_growl_15.wav</ShortName>
+					<Path>SFX\monsters\growl\monster_growl_15_E35A76B0.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedMemoryFiles>
+				<File Id="15790823" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_04.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_04_AD29F36A.wem</Path>
+				</File>
+				<File Id="145205700" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_03.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_03_AD29F36A.wem</Path>
+				</File>
+				<File Id="263704084" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_01.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_01_AD29F36A.wem</Path>
+				</File>
+				<File Id="290532070" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_C_High_120_4-4_B_L0_E12_01A.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_C_High_120_4-4_B_L0_E12_01A_AD29F36A.wem</Path>
+				</File>
+				<File Id="355164801" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_03.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_03_AD29F36A.wem</Path>
+				</File>
+				<File Id="453326890" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_02.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_02_AD29F36A.wem</Path>
+				</File>
+				<File Id="616125262" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_C_High_120_4-4_B_L0_E12_01C.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_C_High_120_4-4_B_L0_E12_01C_AD29F36A.wem</Path>
+				</File>
+				<File Id="631704526" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_02.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_02_AD29F36A.wem</Path>
+				</File>
+				<File Id="738182629" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_06.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_06_AD29F36A.wem</Path>
+				</File>
+				<File Id="899694972" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_C_High_120_4-4_B_L0_E12_01B.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_C_High_120_4-4_B_L0_E12_01B_AD29F36A.wem</Path>
+				</File>
+				<File Id="965630576" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_05.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_05_AD29F36A.wem</Path>
+				</File>
+				<File Id="986570332" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_04.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_A_Low_120_4-4_B_L0_E4_04_AD29F36A.wem</Path>
+				</File>
+				<File Id="1072098441" Language="SFX">
+					<ShortName>heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_01.wav</ShortName>
+					<Path>SFX\heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_01_AD29F36A.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
