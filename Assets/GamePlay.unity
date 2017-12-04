@@ -122,12 +122,12 @@ Prefab:
     - target: {fileID: 224213438047624142, guid: c661d8fbc95834d73af4742d3254ea45,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 386.3
+      value: 470.3
       objectReference: {fileID: 0}
     - target: {fileID: 224213438047624142, guid: c661d8fbc95834d73af4742d3254ea45,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 267.8
+      value: 242.55476
       objectReference: {fileID: 0}
     - target: {fileID: 224213438047624142, guid: c661d8fbc95834d73af4742d3254ea45,
         type: 2}
@@ -288,7 +288,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &284817260
 Prefab:
@@ -433,6 +433,48 @@ MonoBehaviour:
   decodeBank: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
+--- !u!1001 &1387669987
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 662.88367
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 322.33148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939532118540244, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5c0158a6217a4b5489cac5ca84efee60, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1406442588
 Prefab:
   m_ObjectHideFlags: 0
@@ -573,13 +615,13 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1516701698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 566, y: 343, z: 0}
-  m_LocalScale: {x: 0.8707692, y: 0.8707692, z: 0.8707692}
+  m_LocalPosition: {x: 628, y: 307, z: 0}
+  m_LocalScale: {x: 0.96615386, y: 0.96615386, z: 0.96615386}
   m_Children:
   - {fileID: 1646828276}
   - {fileID: 886145196}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -596,12 +638,12 @@ Prefab:
     - target: {fileID: 224002690675154272, guid: fa6a4d247865a4848aca900def22de6c,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 448.3
+      value: 532.3
       objectReference: {fileID: 0}
     - target: {fileID: 224002690675154272, guid: fa6a4d247865a4848aca900def22de6c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -225
+      value: -199.75476
       objectReference: {fileID: 0}
     - target: {fileID: 224002690675154272, guid: fa6a4d247865a4848aca900def22de6c,
         type: 2}
@@ -843,7 +885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2094259540 stripped
 MonoBehaviour:
