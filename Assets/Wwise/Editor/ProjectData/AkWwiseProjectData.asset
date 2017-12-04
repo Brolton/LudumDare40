@@ -1,0 +1,422 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9bca9d327b69649b0e858923863b43, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1B3C45ED-F703-400E-AEE5-791397E6F7B5}'
+    m_lastTimePsrt1: -1623033977
+    m_lastTimePart2: -1999291738
+    List: []
+  - PhysicalPath: Events\Music.wwu
+    ParentPhysicalPath: 
+    Guid: '{5C8DA095-04B1-4C69-9C7B-EE4F8289A7FA}'
+    m_lastTimePsrt1: 207925317
+    m_lastTimePart2: -1999291752
+    List:
+    - Name: PLAY_heartsAndFireflies
+      Path: Music\heartsAndFireflies\PLAY_heartsAndFireflies
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: heartsAndFireflies
+        ObjectType: 4
+      - ElementName: PLAY_heartsAndFireflies
+        ObjectType: 3
+      ID: -1772747153
+      Guid: e2de7857a9edc24f951fd12011863308
+      maxAttenuation: 0
+    - Name: STOP_heartsAndFireflies
+      Path: Music\heartsAndFireflies\STOP_heartsAndFireflies
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: heartsAndFireflies
+        ObjectType: 4
+      - ElementName: STOP_heartsAndFireflies
+        ObjectType: 3
+      ID: 1256063585
+      Guid: d4d6e941622191479d6ddca2ce43e124
+      maxAttenuation: 0
+  - PhysicalPath: Events\SFX.wwu
+    ParentPhysicalPath: 
+    Guid: '{AFA76FC6-E441-43C5-8434-CD8CB884D243}'
+    m_lastTimePsrt1: 61252359
+    m_lastTimePart2: -1999291737
+    List:
+    - Name: PLAY_breath
+      Path: SFX\Character\PLAY_breath
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_breath
+        ObjectType: 3
+      ID: -596920056
+      Guid: 031dacfc7d433140acc82bc4226bc567
+      maxAttenuation: 0
+    - Name: PLAY_catchFirefly
+      Path: SFX\Character\PLAY_catchFirefly
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_catchFirefly
+        ObjectType: 3
+      ID: -1270903250
+      Guid: 79ded3b01534654db9d0930b945b172c
+      maxAttenuation: 0
+    - Name: PLAY_death
+      Path: SFX\Character\PLAY_death
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_death
+        ObjectType: 3
+      ID: 1172822028
+      Guid: bcb96374d3f89e44ac2d54e349535ca9
+      maxAttenuation: 0
+    - Name: PLAY_footsteps
+      Path: SFX\Character\PLAY_footsteps
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_footsteps
+        ObjectType: 3
+      ID: -440811497
+      Guid: f82c7bf7b379404e86edd5d5b9be06ea
+      maxAttenuation: 0
+    - Name: PLAY_fumble
+      Path: SFX\Character\PLAY_fumble
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_fumble
+        ObjectType: 3
+      ID: -50709035
+      Guid: c531c14111ae2845b0317253b129cdfc
+      maxAttenuation: 0
+    - Name: PLAY_game_START
+      Path: SFX\Character\PLAY_game_START
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_game_START
+        ObjectType: 3
+      ID: -185123399
+      Guid: 00dad07ced64eb45965fada85b750741
+      maxAttenuation: 0
+    - Name: PLAY_lantern
+      Path: SFX\Character\PLAY_lantern
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_lantern
+        ObjectType: 3
+      ID: 1133348338
+      Guid: 356b983e346a644889f2c7ef557ff16e
+      maxAttenuation: 0
+    - Name: PLAY_monster_LOOP
+      Path: SFX\Monster\PLAY_monster_LOOP
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: PLAY_monster_LOOP
+        ObjectType: 3
+      ID: -750999063
+      Guid: edffe040b7ab304a8a87503a10c9c1e5
+      maxAttenuation: 0
+    - Name: PLAY_monster_START
+      Path: SFX\Monster\PLAY_monster_START
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: PLAY_monster_START
+        ObjectType: 3
+      ID: 1690946981
+      Guid: f642d395992e804f9a140b5abafd3329
+      maxAttenuation: 0
+    - Name: PLAY_startGame
+      Path: SFX\_Global\PLAY_startGame
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: _Global
+        ObjectType: 4
+      - ElementName: PLAY_startGame
+        ObjectType: 3
+      ID: 1444205428
+      Guid: ecbd7b634ecad44e83834dbc8ce2aaeb
+      maxAttenuation: 0
+    - Name: STOP_breath
+      Path: SFX\Character\STOP_breath
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: STOP_breath
+        ObjectType: 3
+      ID: -1701710002
+      Guid: 939ed37708da024a9a8a24175bcd79dc
+      maxAttenuation: 0
+    - Name: STOP_footsteps
+      Path: SFX\Character\STOP_footsteps
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: STOP_footsteps
+        ObjectType: 3
+      ID: -1331617939
+      Guid: 90b15bc9c9e0a240a3cc80248713534d
+      maxAttenuation: 0
+    - Name: STOP_lantern
+      Path: SFX\Character\STOP_lantern
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: STOP_lantern
+        ObjectType: 3
+      ID: 180437504
+      Guid: 023402077ac1e841b3d680cf8d862830
+      maxAttenuation: 0
+    - Name: STOP_monster
+      Path: SFX\Monster\STOP_monster
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: STOP_monster
+        ObjectType: 3
+      ID: 1495041834
+      Guid: 4b27ae1ae6013144a57e4a3a9bbb54db
+      maxAttenuation: 0
+    - Name: STOP_monster_ALL
+      Path: SFX\Monster\STOP_monster_ALL
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: STOP_monster_ALL
+        ObjectType: 3
+      ID: 580469826
+      Guid: f06efa4f516afb4db920bae56b954977
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{7E86958E-7548-425B-8C5A-E9462D04005B}'
+    m_lastTimePsrt1: -1623053978
+    m_lastTimePart2: -1999291738
+    List:
+    - Name: RVB_Music
+      Path: Default Work Unit\Master Audio Bus\RVB_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: RVB_Music
+        ObjectType: 1
+      ID: 1187187701
+      Guid: 4dd15496cb111f43b99f5b642b383dd7
+    - Name: RVB_SFX
+      Path: Default Work Unit\Master Audio Bus\RVB_SFX
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: RVB_SFX
+        ObjectType: 1
+      ID: -945134911
+      Guid: 128480af0264214e9ad9ac755417388e
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{889A8C71-10CB-4D99-8307-BB15E8E59C5C}'
+    m_lastTimePsrt1: -207515341
+    m_lastTimePart2: -1999291761
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{0133EC8B-6A99-4A7A-82D8-C073F699DED7}'
+    m_lastTimePsrt1: 207835312
+    m_lastTimePart2: -1999291752
+    List:
+    - Name: Heartbeat
+      Path: Default Work Unit\Heartbeat
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Heartbeat
+        ObjectType: 11
+      ID: -2115480809
+      Guid: 4c88c347dbd73e448768677bc0329c6b
+      values:
+      - High
+      - Low
+      - Middle
+      ValueIcons:
+      - ElementName: High
+        ObjectType: 10
+      - ElementName: Low
+        ObjectType: 10
+      - ElementName: Middle
+        ObjectType: 10
+      valueIDs: 8109a5d3e5b481206617313d
+      ValueGuids:
+      - bytes: ab25c581e3c5544d91bc243b33fd6e35
+      - bytes: 2134796631c0cc4eb8d0e149435fcddd
+      - bytes: 9ffb12f5a7797e448dd735424d110d6d
+    - Name: Movement
+      Path: Default Work Unit\Movement
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Movement
+        ObjectType: 11
+      ID: 2129636626
+      Guid: d2dadf8976c1c5419970caadb88c2161
+      values:
+      - Run
+      - Walk
+      ValueIcons:
+      - ElementName: Run
+        ObjectType: 10
+      - ElementName: Walk
+        ObjectType: 10
+      valueIDs: a8b9722abe6db17d
+      ValueGuids:
+      - bytes: 27c5cffa58ba35418a141b6d8d740b97
+      - bytes: 249898f4022b2748aa51a9e4469df6bc
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{831B612D-7A28-4E4E-9691-0EBDC7832315}'
+    m_lastTimePsrt1: -303704981
+    m_lastTimePart2: -1999291789
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{AD0E8222-E8BC-45E8-AB1F-E7E67DA3AB41}'
+    m_lastTimePsrt1: -1623013975
+    m_lastTimePart2: -1999291738
+    List:
+    - Name: RTCP_FireflyDistance
+      Path: Default Work Unit\RTCP_FireflyDistance
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTCP_FireflyDistance
+        ObjectType: 13
+      ID: 839985809
+      Guid: 27bb222c8040bf4e9f3939281c4ce9a7
+    - Name: RTCP_HeartBeat
+      Path: Default Work Unit\RTCP_HeartBeat
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTCP_HeartBeat
+        ObjectType: 13
+      ID: -1551631593
+      Guid: 8c59f78e921c0f409fa3cf82fedfab49
+    - Name: RTCP_MonsteDistance
+      Path: Default Work Unit\RTCP_MonsteDistance
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTCP_MonsteDistance
+        ObjectType: 13
+      ID: -1333593656
+      Guid: d57cf4c8d5e75a40a61903a69819587c
+    - Name: RTCP_MonsterPosition
+      Path: Default Work Unit\RTCP_MonsterPosition
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTCP_MonsterPosition
+        ObjectType: 13
+      ID: 1904735788
+      Guid: f49b91bb1592484ba1bae54877532c54
+    - Name: RTCP_Movement
+      Path: Default Work Unit\RTCP_Movement
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTCP_Movement
+        ObjectType: 13
+      ID: -1865521902
+      Guid: dc27f3c8d1c4dc43a5c5422cd82a2168
+    - Name: RTCP_Music_Volume
+      Path: Default Work Unit\RTCP_Music_Volume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTCP_Music_Volume
+        ObjectType: 13
+      ID: -619501845
+      Guid: df0a6239a2e656479a31bb5e4d08d78a
+    - Name: RTCP_SFX_Volume
+      Path: Default Work Unit\RTCP_SFX_Volume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTCP_SFX_Volume
+        ObjectType: 13
+      ID: 1162152259
+      Guid: 6759a2e1781d2f458433b87633dcfeef
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1A7FC2CF-27A4-4CBD-B497-CED824862401}'
+    m_lastTimePsrt1: -303804987
+    m_lastTimePart2: -1999291789
+    List: []
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

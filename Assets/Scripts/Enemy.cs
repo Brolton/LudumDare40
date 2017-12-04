@@ -22,6 +22,10 @@ public class Enemy : MonoBehaviour
     public SpriteRenderer sprite;
     public int PlayerOrderInLayer = 10;
 
+	// Wwise
+	bool audioStarted = false;
+	bool firstAudioStart = false;
+
     void Start()
     {
 
@@ -33,6 +37,9 @@ public class Enemy : MonoBehaviour
             return;
 
 		float distanceToPlayer = Vector3.Distance (player.transform.position, transform.position);
+		AkSoundEngine.SetRTPCValue ("RTPC_MonsterDistance", distanceToPlayer / 10);
+		Debug.Log (distanceToPlayer);
+
 
 		if (distanceToPlayer > DistToDie)
         { 
@@ -51,6 +58,12 @@ public class Enemy : MonoBehaviour
 
             if (rndDirection.x != 0)
                 sprite.flipX = (rndDirection.x > 0);
+
+			if(audioStarted && firstAudioStart) 
+			{
+				AkSoundEngine.PostEvent ("STOP_monster", gameObject);					// Wwise stop monster_loop
+				audioStarted = false;
+			}
         }
 		else if (distanceToPlayer > MinDist)
         {
@@ -63,6 +76,17 @@ public class Enemy : MonoBehaviour
 
             rndDirection = dir;
             rndMovesCount = 30;
+
+
+			// Wwise
+			if(!audioStarted) 
+			{
+				AkSoundEngine.PostEvent ("PLAY_monster_START", gameObject);					// Wwise play monster_loop
+				audioStarted = true;
+
+				if (!firstAudioStart)
+					firstAudioStart = true; 												// Wwise flag to avoid continuous triggering of STOP_monster at spawning
+			}
         }
     }
 

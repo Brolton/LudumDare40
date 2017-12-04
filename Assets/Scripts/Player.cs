@@ -47,17 +47,25 @@ public class Player : MonoBehaviour
 
 	public HeartPanel Heart;
 
+	//Wwise variables
+	bool isMoving = false;											// Flag to trigger STOP_footsteps
+
     void Start()
     {
         //lightVicinity = 15f;
         instance = this;
         animator = this.gameObject.GetComponentInChildren<Animator>();
+
+		//Wwise globals, maybe needs to be moved to a general place
+		AkSoundEngine.PostEvent("PLAY_Lantern", gameObject);			// Wwise play lantern fire
+		AkSoundEngine.SetRTPCValue ("RTCP_Movement", 0);				// Wwise set movement to Walk
     }
 
     void FixedUpdate()
     {
         var horizontalMovementRaw = Input.GetAxisRaw("Horizontal");
         var vericalMovementRaw = Input.GetAxisRaw("Vertical");
+								
 
         // Player recently picked up firefly - play glow animation and stay in one place
         if (pickedUpFireflyCountdown > 0)
@@ -71,18 +79,42 @@ public class Player : MonoBehaviour
         // Is running
         if (Input.GetKey(KeyCode.LeftShift) && heartbeat < maxHeartbeatForRunning)
         {
-            continuoslyDecreaseHeartbeat = 0f;   // heartbeat decrease reseted after start of running
-            speed = 2f;           
+            continuoslyDecreaseHeartbeat = 0f;   			// heartbeat decrease reseted after start of running
+            speed = 2f;
+
+			//Wwise set footsteps to RUN
+			//AkSoundEngine.SetSwitch ("Movement", "Run", gameObject);	// set footsteps to RUN
+			AkSoundEngine.SetRTPCValue("RTPC_Movement", 1.0f);
+
+			Debug.Log ("run");
         }
         else
         {
             speed = 1f;
-        }
+
+			// Wwise set footsteps to WALK
+			//AkSoundEngine.SetSwitch ("Movement", "Walk", gameObject);	
+			AkSoundEngine.SetRTPCValue("RTPC_Movement", 0.0f);
+        
+			Debug.Log ("walk");
+		}
 
         // Movement
         rb2D.velocity = new Vector2(horizontalMovementRaw, vericalMovementRaw).normalized * speed;
+		//Debug.Log (rb2D.velocity);
 		if (horizontalMovementRaw != 0)
 			sprite.flipX = (horizontalMovementRaw < 0);     // rotation to direction of movement
+		// Movement -> Wwise
+		if ((horizontalMovementRaw != 0 || vericalMovementRaw != 0) && !isMoving) 
+		{
+			AkSoundEngine.PostEvent ("PLAY_footsteps", gameObject);
+			isMoving = true;
+		} 
+		else if (horizontalMovementRaw == 0 && vericalMovementRaw == 0 && isMoving)
+		{
+			AkSoundEngine.PostEvent ("STOP_footsteps", gameObject);
+			isMoving = false;
+		}
 
         //Selection of animation
         if (horizontalMovementRaw == 0 && vericalMovementRaw == 0)
@@ -173,6 +205,8 @@ public class Player : MonoBehaviour
 
         instance.continuoslyDecreaseHeartbeat = heartbeatDecreasePerPickedUpFirefly;         
         gameManager.PickUpFirefly();   
+
+		AkSoundEngine.PostEvent ("PLAY_pickupFirefly", gameObject);						// Wwise play pickupFirefly sound
     }
 
     public void DestroyEnemiesInsideLightVicinity()
@@ -183,6 +217,9 @@ public class Player : MonoBehaviour
             {
                 // Effect ?
 				enemy.GetComponent<Enemy>().Kill();
+
+				// Wwise
+				AkSoundEngine.PostEvent("STOP_monster", enemy);							// Wwise stop single monster_loop
             }
         }
     }
