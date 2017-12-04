@@ -25,8 +25,8 @@ public class Player : MonoBehaviour
     public const float maxHeartbeatForRunning = 80f;
     public const float normalSpeed = 1f;
     public const float runningSpeed = 3f;
-    public const float normalHeartbeatIncrease = 1f;
-    public const float runningHeartbeatIncrease = 4f;
+    public const float normalHeartbeatIncrease = 3f;
+    public const float runningHeartbeatIncrease = 7f;
     public const float pickedUpFireflyCountdownSet = 1.5f;
     float pickedUpFireflyCountdown = 0;
     public const string enemyTag = "enemy";
@@ -47,6 +47,8 @@ public class Player : MonoBehaviour
 
 	public HeartPanel Heart;
 
+    public bool death = false;
+
     void Start()
     {
         //lightVicinity = 15f;
@@ -58,6 +60,16 @@ public class Player : MonoBehaviour
     {
         var horizontalMovementRaw = Input.GetAxisRaw("Horizontal");
         var vericalMovementRaw = Input.GetAxisRaw("Vertical");
+
+        if (death)
+        {
+            if (torchLightEffect.radius != 0)   // Lantern fade to black
+            {
+                torchLightEffect.radius -= 2f * Time.deltaTime;
+                rb2D.velocity = new Vector2(0f, 0f);
+                return;
+            }
+        }
 
         // Player recently picked up firefly - play glow animation and stay in one place
         if (pickedUpFireflyCountdown > 0)
@@ -102,15 +114,15 @@ public class Player : MonoBehaviour
         }
 
         // Lanter
-        var mouseWheel = -Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
-        var laternDtSize = Input.GetAxisRaw("Lantern Size") * lanternDtSizeSensitivity * Time.fixedDeltaTime;
+        float mouseWheel = -Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
+        float laternDtSize = Input.GetAxisRaw("Lantern Size") * lanternDtSizeSensitivity * Time.fixedDeltaTime;
 
         // prevent from pressing both the mouseWheel and U/I to double the speed
         lightVicinity += Mathf.Clamp(mouseWheel + laternDtSize, Mathf.Min(mouseWheel, laternDtSize), Mathf.Max(mouseWheel, laternDtSize));
         lightVicinity = Mathf.Clamp(lightVicinity, 1f, 5f);
 
         // calculates how many screen pixels one unit is wide
-        var screenPixelsPerUnit = (torchLightEffect.cam.WorldToScreenPoint(Vector3.one) -
+        float screenPixelsPerUnit = (torchLightEffect.cam.WorldToScreenPoint(Vector3.one) -
             torchLightEffect.cam.WorldToScreenPoint(Vector3.zero)).magnitude;
 
         // make the light actual radius match lightVicinity(which is in units)
@@ -119,14 +131,18 @@ public class Player : MonoBehaviour
 
 
         // Clipping of heartbeat value
-        if (heartbeat < 0f)
+        if (heartbeat <= 0f)
         {
             heartbeat = 0f;
         }
-        if (heartbeat > 100f)
+        if (heartbeat > 100f && !death)   // Main character dies
         {
-            rb2D.velocity = new Vector2(0f, 0f);
+            rb2D.velocity = new Vector2(0f, 0f);    // Restricts movement
+
             animator.runtimeAnimatorController = dieAnim;
+
+            death = true;
+
             gameManager.GameOver();
         }
        
@@ -144,7 +160,7 @@ public class Player : MonoBehaviour
             }
             else
             {
-                heartbeat += normalHeartbeatIncrease * Time.deltaTime * NumberOfEnemiesNearby();  // Needed ?
+                heartbeat += normalHeartbeatIncrease * Time.deltaTime * NumberOfEnemiesNearby();
             }           
         }
 
