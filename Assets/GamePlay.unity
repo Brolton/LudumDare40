@@ -217,7 +217,7 @@ Prefab:
     - target: {fileID: 224531986854681728, guid: c661d8fbc95834d73af4742d3254ea45,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -136
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224901582909782250, guid: c661d8fbc95834d73af4742d3254ea45,
         type: 2}
@@ -467,7 +467,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1516701698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 271.5, y: 179.5, z: 0}
+  m_LocalPosition: {x: 628, y: 307, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1646828276}
@@ -644,21 +644,20 @@ Prefab:
       propertyPath: Heart
       value: 
       objectReference: {fileID: 886145200}
-    - target: {fileID: 114899075523671750, guid: c45c8ac866f646440be905cd588b411c,
+    - target: {fileID: 212041171682663178, guid: c45c8ac866f646440be905cd588b411c,
         type: 2}
-      propertyPath: flashEffect
-      value: 
-      objectReference: {fileID: 1473575372735644, guid: b6d483d4b9e7d7f4b9e7c8579f36a0ed,
-        type: 2}
-    - target: {fileID: 114498237569431912, guid: c45c8ac866f646440be905cd588b411c,
-        type: 2}
-      propertyPath: flashLightBorder.Array.data[0]
-      value: 1
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114498237569431912, guid: c45c8ac866f646440be905cd588b411c,
+    - target: {fileID: 61622013688766590, guid: c45c8ac866f646440be905cd588b411c,
         type: 2}
-      propertyPath: flashLightBorder.Array.data[1]
-      value: 1
+      propertyPath: m_Offset.x
+      value: 0.12799391
+      objectReference: {fileID: 0}
+    - target: {fileID: 61622013688766590, guid: c45c8ac866f646440be905cd588b411c,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.844012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}

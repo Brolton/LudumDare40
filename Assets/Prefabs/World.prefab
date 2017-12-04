@@ -696,7 +696,7 @@ Animator:
   m_GameObject: {fileID: 1614303850245602}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ff3c615aa6b498340a854fa298244036, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9159084d88fe93740adbdcf8cd499697, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -751,8 +751,8 @@ MonoBehaviour:
   - 100
   - 110
   flashLightBorder:
-  - 20
-  - 30
+  - 1
+  - 1
   flashLightSkew:
   - {x: 1, y: 1.5}
   - {x: 1, y: 1}
@@ -800,6 +800,8 @@ MonoBehaviour:
     type: 2}
   fireflyManager: {fileID: 0}
   torchLightEffect: {fileID: 114498237569431912}
+  flashEffect: {fileID: 1473575372735644, guid: b6d483d4b9e7d7f4b9e7c8579f36a0ed,
+    type: 2}
   sprite: {fileID: 212041171682663178}
   instance: {fileID: 114899075523671750}
   runAnim: {fileID: 9100000, guid: bed4a73de4eb2624b8be2d7b298d37d1, type: 2}
@@ -869,7 +871,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 4.69}
+  m_Size: {x: 5.61, y: 4.69}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
