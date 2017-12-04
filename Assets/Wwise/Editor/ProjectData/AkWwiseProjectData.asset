@@ -52,8 +52,8 @@ MonoBehaviour:
   - PhysicalPath: Events\SFX.wwu
     ParentPhysicalPath: 
     Guid: '{AFA76FC6-E441-43C5-8434-CD8CB884D243}'
-    m_lastTimePsrt1: 61252359
-    m_lastTimePart2: -1999291737
+    m_lastTimePsrt1: 2115980228
+    m_lastTimePart2: -1999291725
     List:
     - Name: PLAY_breath
       Path: SFX\Character\PLAY_breath
@@ -66,18 +66,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: -596920056
       Guid: 031dacfc7d433140acc82bc4226bc567
-      maxAttenuation: 0
-    - Name: PLAY_catchFirefly
-      Path: SFX\Character\PLAY_catchFirefly
-      PathAndIcons:
-      - ElementName: SFX
-        ObjectType: 12
-      - ElementName: Character
-        ObjectType: 4
-      - ElementName: PLAY_catchFirefly
-        ObjectType: 3
-      ID: -1270903250
-      Guid: 79ded3b01534654db9d0930b945b172c
       maxAttenuation: 0
     - Name: PLAY_death
       Path: SFX\Character\PLAY_death
@@ -163,6 +151,18 @@ MonoBehaviour:
       ID: 1690946981
       Guid: f642d395992e804f9a140b5abafd3329
       maxAttenuation: 0
+    - Name: PLAY_pickupFirefly
+      Path: SFX\Character\PLAY_pickupFirefly
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_pickupFirefly
+        ObjectType: 3
+      ID: 201742637
+      Guid: 79ded3b01534654db9d0930b945b172c
+      maxAttenuation: 0
     - Name: PLAY_startGame
       Path: SFX\_Global\PLAY_startGame
       PathAndIcons:
@@ -239,8 +239,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{7E86958E-7548-425B-8C5A-E9462D04005B}'
-    m_lastTimePsrt1: -1623053978
-    m_lastTimePart2: -1999291738
+    m_lastTimePsrt1: 328236164
+    m_lastTimePart2: -1999291730
     List:
     - Name: RVB_Music
       Path: Default Work Unit\Master Audio Bus\RVB_Music
@@ -275,8 +275,8 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{0133EC8B-6A99-4A7A-82D8-C073F699DED7}'
-    m_lastTimePsrt1: 207835312
-    m_lastTimePart2: -1999291752
+    m_lastTimePsrt1: 328316169
+    m_lastTimePart2: -1999291730
     List:
     - Name: Heartbeat
       Path: Default Work Unit\Heartbeat
@@ -328,78 +328,96 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{831B612D-7A28-4E4E-9691-0EBDC7832315}'
-    m_lastTimePsrt1: -303704981
-    m_lastTimePart2: -1999291789
-    List: []
+    m_lastTimePsrt1: -918026928
+    m_lastTimePart2: -1999291736
+    List:
+    - Name: Music
+      Path: Default Work Unit\Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      ID: -303024426
+      Guid: 1d046b6c8ece2d449c804d1f9f872fc9
+    - Name: SFX
+      Path: Default Work Unit\SFX
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 7
+      ID: 393239870
+      Guid: 0c2a6263d008954c9d0bf75286cc7a0a
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AD0E8222-E8BC-45E8-AB1F-E7E67DA3AB41}'
-    m_lastTimePsrt1: -1623013975
-    m_lastTimePart2: -1999291738
+    m_lastTimePsrt1: 1593561985
+    m_lastTimePart2: -1999291726
     List:
-    - Name: RTCP_FireflyDistance
-      Path: Default Work Unit\RTCP_FireflyDistance
+    - Name: RTPC_FireflyDistance
+      Path: Default Work Unit\RTPC_FireflyDistance
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RTCP_FireflyDistance
+      - ElementName: RTPC_FireflyDistance
         ObjectType: 13
-      ID: 839985809
+      ID: 1468078247
       Guid: 27bb222c8040bf4e9f3939281c4ce9a7
-    - Name: RTCP_HeartBeat
-      Path: Default Work Unit\RTCP_HeartBeat
+    - Name: RTPC_HeartBeat
+      Path: Default Work Unit\RTPC_HeartBeat
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RTCP_HeartBeat
+      - ElementName: RTPC_HeartBeat
         ObjectType: 13
-      ID: -1551631593
+      ID: 2136815501
       Guid: 8c59f78e921c0f409fa3cf82fedfab49
-    - Name: RTCP_MonsteDistance
-      Path: Default Work Unit\RTCP_MonsteDistance
+    - Name: RTPC_MonsterDistance
+      Path: Default Work Unit\RTPC_MonsterDistance
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RTCP_MonsteDistance
+      - ElementName: RTPC_MonsterDistance
         ObjectType: 13
-      ID: -1333593656
+      ID: 870318650
       Guid: d57cf4c8d5e75a40a61903a69819587c
-    - Name: RTCP_MonsterPosition
-      Path: Default Work Unit\RTCP_MonsterPosition
+    - Name: RTPC_MonsterPosition
+      Path: Default Work Unit\RTPC_MonsterPosition
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RTCP_MonsterPosition
+      - ElementName: RTPC_MonsterPosition
         ObjectType: 13
-      ID: 1904735788
+      ID: -1295448174
       Guid: f49b91bb1592484ba1bae54877532c54
-    - Name: RTCP_Movement
-      Path: Default Work Unit\RTCP_Movement
+    - Name: RTPC_Movement
+      Path: Default Work Unit\RTPC_Movement
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RTCP_Movement
+      - ElementName: RTPC_Movement
         ObjectType: 13
-      ID: -1865521902
+      ID: 813601384
       Guid: dc27f3c8d1c4dc43a5c5422cd82a2168
-    - Name: RTCP_Music_Volume
-      Path: Default Work Unit\RTCP_Music_Volume
+    - Name: RTPC_Music_Volume
+      Path: Default Work Unit\RTPC_Music_Volume
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RTCP_Music_Volume
+      - ElementName: RTPC_Music_Volume
         ObjectType: 13
-      ID: -619501845
+      ID: 1596647065
       Guid: df0a6239a2e656479a31bb5e4d08d78a
-    - Name: RTCP_SFX_Volume
-      Path: Default Work Unit\RTCP_SFX_Volume
+    - Name: RTPC_SFX_Volume
+      Path: Default Work Unit\RTPC_SFX_Volume
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RTCP_SFX_Volume
+      - ElementName: RTPC_SFX_Volume
         ObjectType: 13
-      ID: 1162152259
+      ID: 932301089
       Guid: 6759a2e1781d2f458433b87633dcfeef
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -408,7 +426,8 @@ MonoBehaviour:
     m_lastTimePsrt1: -303804987
     m_lastTimePart2: -1999291789
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /LudumDare40
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
