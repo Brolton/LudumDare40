@@ -22,8 +22,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     Guid: '{5C8DA095-04B1-4C69-9C7B-EE4F8289A7FA}'
-    m_lastTimePsrt1: -1983403208
-    m_lastTimePart2: -1999291566
+    m_lastTimePsrt1: -1088733501
+    m_lastTimePart2: -1999291559
     List:
     - Name: PLAY_heartsAndFireflies
       Path: Music\heartsAndFireflies\PLAY_heartsAndFireflies
@@ -263,8 +263,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{7E86958E-7548-425B-8C5A-E9462D04005B}'
-    m_lastTimePsrt1: -141606053
-    m_lastTimePart2: -1999291561
+    m_lastTimePsrt1: 1111974182
+    m_lastTimePart2: -1999291553
     List:
     - Name: RVB_Music
       Path: Default Work Unit\Master Audio Bus\RVB_Music
@@ -377,8 +377,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AD0E8222-E8BC-45E8-AB1F-E7E67DA3AB41}'
-    m_lastTimePsrt1: 277297907
-    m_lastTimePart2: -1999291560
+    m_lastTimePsrt1: -969296497
+    m_lastTimePart2: -1999291553
     List:
     - Name: RTPC_FireflyDistance
       Path: Default Work Unit\RTPC_FireflyDistance
