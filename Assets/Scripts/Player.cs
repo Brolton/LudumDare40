@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     public const float pickedUpFireflyCountdownSet = 1.5f;
     float pickedUpFireflyCountdown = 0;
     public const string enemyTag = "enemy";
+    public const float killEnemyDistance = 10f;
 
     private float continuoslyDecreaseHeartbeat;
 
@@ -195,7 +196,7 @@ public class Player : MonoBehaviour
     {
         foreach (GameObject enemy in GameObject.FindGameObjectsWithTag(enemyTag))
         {
-            if (Vector2.Distance(instance.transform.localPosition, enemy.transform.localPosition) < lightVicinity)
+            if (Vector2.Distance(instance.transform.localPosition, enemy.transform.localPosition) < killEnemyDistance)
             {
                 // Effect ?
 				enemy.GetComponent<Enemy>().Kill();
