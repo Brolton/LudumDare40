@@ -217,7 +217,7 @@ Prefab:
     - target: {fileID: 224531986854681728, guid: c661d8fbc95834d73af4742d3254ea45,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -136
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224901582909782250, guid: c661d8fbc95834d73af4742d3254ea45,
         type: 2}
@@ -644,27 +644,7 @@ Prefab:
       propertyPath: Heart
       value: 
       objectReference: {fileID: 886145200}
-    - target: {fileID: 212549246371164128, guid: c45c8ac866f646440be905cd588b411c,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 423a296b6e9b6a44e8f30ccf5549493a,
-        type: 3}
-    - target: {fileID: 212549246371164128, guid: c45c8ac866f646440be905cd588b411c,
-        type: 2}
-      propertyPath: m_DrawMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4859570501134266, guid: c45c8ac866f646440be905cd588b411c, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4.198153
-      objectReference: {fileID: 0}
-    - target: {fileID: 4859570501134266, guid: c45c8ac866f646440be905cd588b411c, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3.0199006
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 212696160362059462, guid: c45c8ac866f646440be905cd588b411c, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45c8ac866f646440be905cd588b411c, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1710766777 stripped

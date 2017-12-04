@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4075786535156084}
   - component: {fileID: 212948355905844654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4712962638430434}
   - component: {fileID: 70494820190091142}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
