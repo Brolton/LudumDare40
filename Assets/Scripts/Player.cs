@@ -104,7 +104,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) && heartbeat < maxHeartbeatForRunning)
             {
                 animator.runtimeAnimatorController = runAnim;
             }
@@ -155,7 +155,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) && (horizontalMovementRaw != 0 || vericalMovementRaw != 0))
             {
                 heartbeat += runningHeartbeatIncrease * Time.deltaTime * (NumberOfEnemiesNearby() + 1);
             }
