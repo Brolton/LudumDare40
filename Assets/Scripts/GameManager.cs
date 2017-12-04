@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
         score = 0;
         // Effect?
         // Game Over screen
+
+		AkSoundEngine.PostEvent ("PLAY_death", gameObject);
     }
 
     public void PickUpFirefly() { score += FireflyDtScore; }
