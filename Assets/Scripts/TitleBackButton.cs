@@ -52,7 +52,9 @@ public class TitleBackButton : MonoBehaviour {
 
             music.volume = musicVolSliderControl.value;
             sfx.volume = sfxVolSliderControl.value;
-
+		AkSoundEngine.setRTPCValue("RTPC_SFX_Volume", [sfxVolSliderControl.value]);
+            AkSoundEngine.setRTPCValue("RTPC_SFX_Volume", [sfxVolSliderControl.value]);
+		
         }
 
         if (credits == true)
