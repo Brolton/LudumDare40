@@ -64,6 +64,7 @@ public class Player : MonoBehaviour
 		//Wwise globals, maybe needs to be moved to a general place
 		AkSoundEngine.PostEvent("PLAY_Lantern", gameObject);			// Wwise play lantern fire sound
 		AkSoundEngine.SetRTPCValue ("RTCP_Movement", 0);				// Wwise set movement to Walk
+		AkSoundEngine.SetRTPCValue ("RTCP_HeartBeat", 0);				// Wwise set movement to Walk
 		AkSoundEngine.PostEvent("PLAY_heartbeat", gameObject);			// Wwise play heartbeat sound
     }
 
@@ -201,6 +202,9 @@ public class Player : MonoBehaviour
         }
 
 		Heart.SetHeartbeat (heartbeat);
+
+		//Wwise
+		AkSoundEngine.SetRTPCValue("RTPC_HeartBeat", heartbeat);					// Wwise set RTPC value Heartbeat
     }
 
     public int NumberOfEnemiesNearby()
