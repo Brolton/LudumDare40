@@ -104,7 +104,6 @@ public class Player : MonoBehaviour
 			//AkSoundEngine.SetSwitch ("Movement", "Run", gameObject);	// set footsteps to RUN
 			AkSoundEngine.SetRTPCValue("RTPC_Movement", 1.0f);
 
-			Debug.Log ("run");
         }
         else
         {
@@ -114,7 +113,6 @@ public class Player : MonoBehaviour
 			//AkSoundEngine.SetSwitch ("Movement", "Walk", gameObject);	
 			AkSoundEngine.SetRTPCValue("RTPC_Movement", 0.0f);
         
-			Debug.Log ("walk");
 		}
 
         // Movement

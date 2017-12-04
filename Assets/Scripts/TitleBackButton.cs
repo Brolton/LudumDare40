@@ -41,10 +41,6 @@ public class TitleBackButton : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		Debug.Log(musicVolSliderControl.value);
-        Debug.Log(sfxVolSliderControl.value);
-
-
         if (options == true)
         {
 
