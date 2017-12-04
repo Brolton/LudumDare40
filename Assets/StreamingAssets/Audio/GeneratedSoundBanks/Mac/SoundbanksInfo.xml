@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
 		<ProjectRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\</ProjectRoot>
-		<SourceFilesRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SourceFilesRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>I:\GameDev\LudumDare40\03_Wwise\001_LudumDare_Master\LudumDare40\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
