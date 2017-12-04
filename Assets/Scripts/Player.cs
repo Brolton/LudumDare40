@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
 
     public GameObject flashEffect;
 
+
     public const float heartbeatDecreasePerPickedUpFirefly = 20f;
     public const float lengthOfDecreasingHeartbeatAfterPickedUpFirefly = 5f;
     public const float decreaseOfHeartbeatInOneSecond = heartbeatDecreasePerPickedUpFirefly / lengthOfDecreasingHeartbeatAfterPickedUpFirefly;
@@ -66,7 +67,8 @@ public class Player : MonoBehaviour
 		AkSoundEngine.SetRTPCValue ("RTCP_Movement", 0);				// Wwise set movement to Walk
 		AkSoundEngine.SetRTPCValue ("RTCP_HeartBeat", 0);				// Wwise set movement to Walk
 		AkSoundEngine.PostEvent("PLAY_heartbeat", gameObject);			// Wwise play heartbeat sound
-    }
+
+	}
 
     void FixedUpdate()
     {

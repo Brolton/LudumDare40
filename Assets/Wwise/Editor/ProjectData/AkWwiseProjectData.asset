@@ -16,14 +16,14 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1B3C45ED-F703-400E-AEE5-791397E6F7B5}'
-    m_lastTimePsrt1: -1623033977
-    m_lastTimePart2: -1999291738
+    m_lastTimePsrt1: -1983423209
+    m_lastTimePart2: -1999291566
     List: []
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     Guid: '{5C8DA095-04B1-4C69-9C7B-EE4F8289A7FA}'
-    m_lastTimePsrt1: 207925317
-    m_lastTimePart2: -1999291752
+    m_lastTimePsrt1: -1983403208
+    m_lastTimePart2: -1999291566
     List:
     - Name: PLAY_heartsAndFireflies
       Path: Music\heartsAndFireflies\PLAY_heartsAndFireflies
@@ -52,8 +52,8 @@ MonoBehaviour:
   - PhysicalPath: Events\SFX.wwu
     ParentPhysicalPath: 
     Guid: '{AFA76FC6-E441-43C5-8434-CD8CB884D243}'
-    m_lastTimePsrt1: 2115980228
-    m_lastTimePart2: -1999291725
+    m_lastTimePsrt1: -1983373206
+    m_lastTimePart2: -1999291566
     List:
     - Name: PLAY_breath
       Path: SFX\Character\PLAY_breath
@@ -114,6 +114,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -185123399
       Guid: 00dad07ced64eb45965fada85b750741
+      maxAttenuation: 0
+    - Name: PLAY_heartbeat
+      Path: SFX\Character\PLAY_heartbeat
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: PLAY_heartbeat
+        ObjectType: 3
+      ID: -529271378
+      Guid: 4231f5a50462f947a7a60c54de812a08
       maxAttenuation: 0
     - Name: PLAY_lantern
       Path: SFX\Character\PLAY_lantern
@@ -199,6 +211,18 @@ MonoBehaviour:
       ID: -1331617939
       Guid: 90b15bc9c9e0a240a3cc80248713534d
       maxAttenuation: 0
+    - Name: STOP_heartbeat
+      Path: SFX\Character\STOP_heartbeat
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: STOP_heartbeat
+        ObjectType: 3
+      ID: -975294040
+      Guid: 5407b1b44e087648ba3843dd83767a6c
+      maxAttenuation: 0
     - Name: STOP_lantern
       Path: SFX\Character\STOP_lantern
       PathAndIcons:
@@ -239,8 +263,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{7E86958E-7548-425B-8C5A-E9462D04005B}'
-    m_lastTimePsrt1: 328236164
-    m_lastTimePart2: -1999291730
+    m_lastTimePsrt1: -1983533215
+    m_lastTimePart2: -1999291566
     List:
     - Name: RVB_Music
       Path: Default Work Unit\Master Audio Bus\RVB_Music
@@ -268,15 +292,15 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{889A8C71-10CB-4D99-8307-BB15E8E59C5C}'
-    m_lastTimePsrt1: -207515341
-    m_lastTimePart2: -1999291761
+    m_lastTimePsrt1: -1983333204
+    m_lastTimePart2: -1999291566
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{0133EC8B-6A99-4A7A-82D8-C073F699DED7}'
-    m_lastTimePsrt1: 328316169
-    m_lastTimePart2: -1999291730
+    m_lastTimePsrt1: -1983353205
+    m_lastTimePart2: -1999291566
     List:
     - Name: Heartbeat
       Path: Default Work Unit\Heartbeat
@@ -328,8 +352,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{831B612D-7A28-4E4E-9691-0EBDC7832315}'
-    m_lastTimePsrt1: -918026928
-    m_lastTimePart2: -1999291736
+    m_lastTimePsrt1: -1983313203
+    m_lastTimePart2: -1999291566
     List:
     - Name: Music
       Path: Default Work Unit\Music
@@ -353,8 +377,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AD0E8222-E8BC-45E8-AB1F-E7E67DA3AB41}'
-    m_lastTimePsrt1: 1593561985
-    m_lastTimePart2: -1999291726
+    m_lastTimePsrt1: -1983293202
+    m_lastTimePart2: -1999291566
     List:
     - Name: RTPC_FireflyDistance
       Path: Default Work Unit\RTPC_FireflyDistance
@@ -423,8 +447,8 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1A7FC2CF-27A4-4CBD-B497-CED824862401}'
-    m_lastTimePsrt1: -303804987
-    m_lastTimePart2: -1999291789
+    m_lastTimePsrt1: -1983033187
+    m_lastTimePart2: -1999291566
     List: []
   ExpandedItems:
   - /LudumDare40
