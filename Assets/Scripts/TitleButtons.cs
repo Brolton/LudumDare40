@@ -34,6 +34,7 @@ public class TitleButtons : MonoBehaviour {
     {
 
         SceneManager.LoadSceneAsync("GamePlay");
+		AkSoundEngine.PostEvent ("PLAY_game_START", gameObject);
 
     }
 
