@@ -46,6 +46,7 @@ public class TitleButtons : MonoBehaviour {
     public void OnClickOptions()
     {
             
+	    button.GetComponent<TitleBackButton>().options = true;
             button.SetActive(true);
             button1.SetActive(false);
             button3.SetActive(false);
