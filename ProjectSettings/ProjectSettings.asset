@@ -245,7 +245,7 @@ PlayerSettings:
       m_Height: 1024
       m_Kind: 0
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 9f16d379447774e46a5297b5a95eb783, type: 3}
+      m_Icon: {fileID: 2800000, guid: 4a81f0a3f5562424aa74477a5273f282, type: 3}
       m_Width: 512
       m_Height: 512
       m_Kind: 0
