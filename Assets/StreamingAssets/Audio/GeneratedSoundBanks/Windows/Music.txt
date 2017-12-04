@@ -1,3 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1256063585	STOP_heartsAndFireflies			\Music\heartsAndFireflies\STOP_heartsAndFireflies	
+	2522220143	PLAY_heartsAndFireflies			\Music\heartsAndFireflies\PLAY_heartsAndFireflies	
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2136815501	RTPC_HeartBeat			\Default Work Unit\RTPC_HeartBeat	
 

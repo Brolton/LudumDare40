@@ -374,6 +374,10 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2522220143" Name="PLAY_heartsAndFireflies" ObjectPath="\Events\Music\heartsAndFireflies\PLAY_heartsAndFireflies"/>
+				<Event Id="1256063585" Name="STOP_heartsAndFireflies" ObjectPath="\Events\Music\heartsAndFireflies\STOP_heartsAndFireflies" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="15790823" Language="SFX">
 					<ShortName>heartsAndFireflies\heartsAndFireflies_B_Middle_120_4-4_B_L0_E12_04.wav</ShortName>
