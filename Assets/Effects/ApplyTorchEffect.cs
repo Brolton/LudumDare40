@@ -22,6 +22,7 @@ public class ApplyTorchEffect : MonoBehaviour
     private float[] lightRadius = new float[] { 0f, 0f };
     private Vector4[] lightSkew = new Vector4[] { new Vector4(), new Vector4() };
     private Vector4[] lightOffset = new Vector4[] { new Vector4(), new Vector4() };
+    private float[] lightBorder = new float[] { 0f, 0f };
 
     public float radius = 1f;
 
@@ -36,12 +37,18 @@ public class ApplyTorchEffect : MonoBehaviour
         lightOffset[0] = flashLightOffset[0] * radius;
         lightOffset[1] = flashLightOffset[1] * radius;
 
+        float screenPixelsPerUnit = (cam.WorldToScreenPoint(Vector3.one) -
+            cam.WorldToScreenPoint(Vector3.zero)).magnitude;
+
+        lightBorder[0] = flashLightBorder[0] * screenPixelsPerUnit;
+        lightBorder[1] = flashLightBorder[1] * screenPixelsPerUnit;
+
         var projPos = cam.WorldToScreenPoint(playerTransform.position);
         shader.SetVector("_PlayerPos", new Vector2(projPos.x, projPos.y));
         shader.SetVector("_CamSize", new Vector2(cam.pixelWidth, cam.pixelHeight));
 
         shader.SetFloatArray("_BrightRadius", lightRadius);
-        shader.SetFloatArray("_Border", flashLightBorder);
+        shader.SetFloatArray("_Border", lightBorder);
         shader.SetVectorArray("_Skew", lightSkew);
         shader.SetVectorArray("_Offset", lightOffset);
         shader.SetFloatArray("_Strength", flashLightStrength);
