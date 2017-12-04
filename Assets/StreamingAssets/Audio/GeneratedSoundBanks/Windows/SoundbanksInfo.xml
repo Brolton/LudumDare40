@@ -21,6 +21,7 @@
 				<Event Id="3854155799" Name="PLAY_footsteps" ObjectPath="\Events\SFX\Character\PLAY_footsteps"/>
 				<Event Id="4244258261" Name="PLAY_fumble" ObjectPath="\Events\SFX\Character\PLAY_fumble"/>
 				<Event Id="4109843897" Name="PLAY_game_START" ObjectPath="\Events\SFX\Character\PLAY_game_START"/>
+				<Event Id="3765695918" Name="PLAY_heartbeat" ObjectPath="\Events\SFX\Character\PLAY_heartbeat"/>
 				<Event Id="1133348338" Name="PLAY_lantern" ObjectPath="\Events\SFX\Character\PLAY_lantern"/>
 				<Event Id="3543968233" Name="PLAY_monster_LOOP" ObjectPath="\Events\SFX\Monster\PLAY_monster_LOOP"/>
 				<Event Id="1690946981" Name="PLAY_monster_START" ObjectPath="\Events\SFX\Monster\PLAY_monster_START"/>
@@ -28,6 +29,7 @@
 				<Event Id="1444205428" Name="PLAY_startGame" ObjectPath="\Events\SFX\_Global\PLAY_startGame"/>
 				<Event Id="2593257294" Name="STOP_breath" ObjectPath="\Events\SFX\Character\STOP_breath" MaxAttenuation="0.000000"/>
 				<Event Id="2963349357" Name="STOP_footsteps" ObjectPath="\Events\SFX\Character\STOP_footsteps" MaxAttenuation="0.000000"/>
+				<Event Id="3319673256" Name="STOP_heartbeat" ObjectPath="\Events\SFX\Character\STOP_heartbeat" MaxAttenuation="0.000000"/>
 				<Event Id="180437504" Name="STOP_lantern" ObjectPath="\Events\SFX\Character\STOP_lantern" MaxAttenuation="0.000000"/>
 				<Event Id="1495041834" Name="STOP_monster" ObjectPath="\Events\SFX\Monster\STOP_monster" MaxAttenuation="0.000000"/>
 				<Event Id="580469826" Name="STOP_monster_ALL" ObjectPath="\Events\SFX\Monster\STOP_monster_ALL" MaxAttenuation="0.000000"/>

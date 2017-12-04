@@ -9,8 +9,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1690946981	PLAY_monster_START			\SFX\Monster\PLAY_monster_START	
 	2593257294	STOP_breath			\SFX\Character\STOP_breath	
 	2963349357	STOP_footsteps			\SFX\Character\STOP_footsteps	
+	3319673256	STOP_heartbeat			\SFX\Character\STOP_heartbeat	
 	3543968233	PLAY_monster_LOOP			\SFX\Monster\PLAY_monster_LOOP	
 	3698047240	PLAY_breath			\SFX\Character\PLAY_breath	
+	3765695918	PLAY_heartbeat			\SFX\Character\PLAY_heartbeat	
 	3854155799	PLAY_footsteps			\SFX\Character\PLAY_footsteps	
 	4109843897	PLAY_game_START			\SFX\Character\PLAY_game_START	
 	4244258261	PLAY_fumble			\SFX\Character\PLAY_fumble	
