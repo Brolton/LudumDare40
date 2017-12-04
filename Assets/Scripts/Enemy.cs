@@ -60,7 +60,9 @@ public class Enemy : MonoBehaviour
 
 		float distanceToPlayer = Vector3.Distance (player.transform.position, transform.position);
 		AkSoundEngine.SetRTPCValue ("RTPC_MonsterDistance", distanceToPlayer / 10);
-		Debug.Log (distanceToPlayer);
+
+		float xPositionToPlayer = transform.position.x - player.transform.position.x;
+		AkSoundEngine.SetRTPCValue ("RTPC_MonsterPosition", xPositionToPlayer, gameObject);
 
 
 		if (distanceToPlayer > DistToDie)
