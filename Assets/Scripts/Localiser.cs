@@ -55,6 +55,9 @@ ANIMATION,ANIMAZIONE,ANIMATION,ANIMÁCIA,АНИМАЦИЯ,אנימציה,";
             case SystemLanguage.Hebrew:
                 languageId = 4;
                 break;
+            case SystemLanguage.Czech:  // Czech and Slovak are very similiar
+                languageId = 2;
+                break;
             default:
                 languageId = -1;
                 break;
