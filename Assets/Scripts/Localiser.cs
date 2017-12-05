@@ -65,6 +65,9 @@ Collect Fireflies by walking on them,Raccogli le lucciole raggiungendo la loro p
             case SystemLanguage.Hebrew:
                 languageId = 4;
                 break;
+            case SystemLanguage.Czech:  // Czech and Slovak are very similiar
+                languageId = 2;
+                break;
             default:
                 languageId = -1;
                 break;
