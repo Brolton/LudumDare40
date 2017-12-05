@@ -945,7 +945,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 269199261}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -102.130005, y: -70.8, z: 0}
+  m_LocalPosition: {x: -102.130005, y: -43.399994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 800170044}
@@ -953,8 +953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 169.37, y: 108.2}
-  m_SizeDelta: {x: 313.25, y: 216.4}
+  m_AnchoredPosition: {x: 169.37, y: 135.6}
+  m_SizeDelta: {x: 313.3, y: 271.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269199263
 MonoBehaviour:
@@ -1006,15 +1006,19 @@ MonoBehaviour:
   m_Text: 'Controls:
 
 
-    WASD/Arrow Keys to move
+    WASD
 
-    Scroll-Wheel/''U'' and ''I'' keys to change lamp size
+    Arrow Keys
 
-    Keep Monsters out of your lamp range to keep your heart rate low
+    Scroll-wheel
 
-    Collect Fireflies by walking on them
+    "U" and "I"
 
-'
+    Keys to change lantern size
+
+    Keep monsters out of your lantern range to keep your heartrate low
+
+    Collect Fireflies by walking on them'
 --- !u!222 &269199265
 CanvasRenderer:
   m_ObjectHideFlags: 0
