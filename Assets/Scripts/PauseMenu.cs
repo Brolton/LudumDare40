@@ -13,11 +13,12 @@ public class PauseMenu : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        Time.timeScale = 1;
-        title.SetActive(false);
+	title.SetActive(false);
         resume.SetActive(false);
         resumetext.SetActive(false);
         bg.SetActive(false);
+        Time.timeScale = 1;
+        
 
     }
 	
