@@ -117,6 +117,8 @@ Collect Fireflies by walking on them,Raccogli le lucciole raggiungendo la loro p
                     {
                         if (dict.ContainsKey(lines[i]))
                             obj.text += dict[lines[i]][languageId] + "\n";
+                        else
+                            obj.text += lines[i] + "\n";
                     }
                 }
 

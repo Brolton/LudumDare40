@@ -15,7 +15,7 @@ public class MenuFade : MonoBehaviour
     public bool done = false;
 
     // Use this for initialization
-    void Start()
+    public void Start()
     {
 
         texture = this.GetComponent<CanvasRenderer>();
@@ -30,7 +30,7 @@ public class MenuFade : MonoBehaviour
     void Update()
     {
 
-        lerpTime += Time.deltaTime / 3;
+        lerpTime += Time.unscaledDeltaTime / 3;
 
         if (lerpTime >= lerpTimeStop)
         {
