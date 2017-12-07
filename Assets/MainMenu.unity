@@ -1003,7 +1003,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Controls:
+  m_Text: 'Controls
 
 
     WASD
@@ -1018,7 +1018,7 @@ MonoBehaviour:
 
     Keep monsters out of your lantern range to keep your heartrate low
 
-    Collect Fireflies by walking on them'
+    Collect fireflies by walking on them'
 --- !u!222 &269199265
 CanvasRenderer:
   m_ObjectHideFlags: 0
